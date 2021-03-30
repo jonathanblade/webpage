@@ -1,36 +1,36 @@
 <template>
-    <div class="sticky-top" style="top: 1.5rem;">
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://vk.com/id34885502" target="_blank"><small>Вконтакте</small></a></li>
-            <li class="list-inline-item"><a href="https://t.me/jonathanblade" target="_blank"><small>Telegram</small></a></li>
-            <li class="list-inline-item"><a href="https://github.com/jonathanblade" target="_blank"><small>Github</small></a></li>
-        </ul>
-        <ul class="nav flex-column">
-            <router-link class="mainpanel-nav-link" active-class="mainpanel-nav-link-active" :to="{ name: 'Home' }">Главная</router-link>
-            <router-link class="mainpanel-nav-link" active-class="mainpanel-nav-link-active" :to="{ name: 'CV' }">Резюме</router-link>
-        </ul>
-    </div>
+  <div class="sticky-top" style="top: 1.5rem;">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://vk.com/id34885502" target="_blank"><small>Вконтакте</small></a></li>
+      <li class="list-inline-item"><a href="https://t.me/jonathanblade" target="_blank"><small>Telegram</small></a></li>
+      <li class="list-inline-item"><a href="https://github.com/jonathanblade" target="_blank"><small>Github</small></a></li>
+    </ul>
+    <ul class="nav flex-column">
+      <router-link class="mainpanel-nav-link" active-class="mainpanel-nav-link-active" :to="{ name: 'Home' }">Главная</router-link>
+      <router-link class="mainpanel-nav-link" active-class="mainpanel-nav-link-active" :to="{ name: 'CV' }">Резюме</router-link>
+    </ul>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'MainPanel'
+  name: 'MainPanel'
 };
 </script>
 
 <style>
 .mainpanel-nav-link {
-	padding: 0.7rem;
-	color: #6c757d;
-	text-decoration: none;
+  padding: 0.7rem;
+  color: #6c757d;
+  text-decoration: none;
 }
 .mainpanel-nav-link:hover {
-	color: black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 .mainpanel-nav-link-active {
-	border-left: 5px solid black;
-    color: black;
-    background-color: #f8f9fa;
+  border-left: 5px solid black;
+  color: black;
+  background-color: #f8f9fa;
 }
 </style>
