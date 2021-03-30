@@ -10,10 +10,14 @@
 </template>
 
 <script>
+import PublicationItem from '@/components/PublicationItem.vue';
 import publicationsData from '@/assets/publications.json';
 
 export default {
   name: 'Publications',
+  components: {
+    PublicationItem
+  },
   data() {
     return {
       data: publicationsData

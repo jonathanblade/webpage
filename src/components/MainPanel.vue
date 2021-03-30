@@ -1,5 +1,8 @@
 <template>
-  <div class="sticky-top" style="top: 1.5rem;">
+  <div class="sticky-top" style="top: 1rem;">
+    <img class="w-25 rounded-circle" src="../assets/me.png">
+    <p class="mt-3"><b>Семён Сыроватский</b></p>
+    <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
     <ul class="list-inline">
       <li class="list-inline-item"><a href="https://vk.com/id34885502" target="_blank"><small>Вконтакте</small></a></li>
       <li class="list-inline-item"><a href="https://t.me/jonathanblade" target="_blank"><small>Telegram</small></a></li>

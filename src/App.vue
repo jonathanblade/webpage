@@ -19,11 +19,11 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
 
 #app {
+  font-family: 'Ubuntu Condensed', sans-serif;
   color: black;
-  font-family: 'Roboto', sans-serif;
 }
 a {
   font-weight: bold;
