@@ -1,0 +1,39 @@
+name: Update SSL certificate
+
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Heroku CLI
+        run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+      - name: Install Certbot
+        run: |
+          sudo snap install core
+          sudo snap refresh core
+          sudo snap install --classic certbot
+          sudo ln -s /snap/bin/certbot /usr/bin/certbot
+      - name: Generate SSL certificate
+        run:  sudo certbot certonly --manual --preferred-challenges dns -d jonathanblade.herokuapp.com
+      - name: Apply netrc credentials
+        uses: little-core-labs/netrc-creds@v2.0.0
+        with:
+          creds: |
+            [
+              {
+                "machine": "api.heroku.com",
+                "login": "${{ secrets.HEROKU_EMAIL }} ",
+                "password": "${{ secrets.HEROKU_API_KEY }}"
+              },
+              {
+                "machine": "git.heroku.com",
+                "login": "$${{ secrets.HEROKU_EMAIL }} ",
+                "password": "${{ secrets.HEROKU_API_KEY }}"
+              }
+            ]
+      - name: Add SSL certificate
+        run: sudo heroku certs:add /etc/letsencrypt/live/jonathanblade.herokuapp.com/fullchain.pem /etc/letsencrypt/live/jonathanblade.herokuapp.com/privkey.pem
