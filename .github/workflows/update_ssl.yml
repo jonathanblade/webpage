@@ -35,5 +35,5 @@ jobs:
                 "password": "${{ secrets.HEROKU_API_KEY }}"
               }
             ]
-      - name: Add SSL certificate
-        run: sudo heroku certs:add /etc/letsencrypt/live/jonathanblade.herokuapp.com/fullchain.pem /etc/letsencrypt/live/jonathanblade.herokuapp.com/privkey.pem
+      - name: Update SSL certificate
+        run: sudo heroku certs:update /etc/letsencrypt/live/jonathanblade.herokuapp.com/fullchain.pem /etc/letsencrypt/live/jonathanblade.herokuapp.com/privkey.pem
