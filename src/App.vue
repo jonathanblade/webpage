@@ -19,10 +19,10 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 #app {
-  font-family: 'Ubuntu Condensed', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: black;
 }
 a {
