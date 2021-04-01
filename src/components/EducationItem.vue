@@ -2,7 +2,7 @@
   <div class="mb-3">
     <ul class="list-inline">
       <li class="list-inline-item"><h5>{{ item.degree }}</h5></li>
-      <li class="list-inline-item float-end text-muted">{{ item.start }} - {{ item.end }}</li>
+      <li class="list-inline-item float-end text-muted"><small>{{ item.start }} - {{ item.end }}</small></li>
     </ul>
     {{ item.university }}, {{ item.faculty }}<br>
     <small>
