@@ -23,6 +23,7 @@ export default {
 
 <style>
 .mainpanel-nav-link {
+  border-left: 5px solid white;  
   padding: 0.7rem;
   color: #6c757d;
   text-decoration: none;
