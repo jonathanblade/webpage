@@ -1,5 +1,5 @@
 <template>
-  <MDBCol sm="12" md="5" lg="3" class="mt-4">
+  <MDBCol sm="12" md="5" lg="3" class="mt-4 offset-lg-2">
     <MainPanel/>
   </MDBCol>
   <MDBCol sm="12" md="6" lg="4" class="mt-4">
