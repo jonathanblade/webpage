@@ -9,7 +9,7 @@
       <PublicationsSection/>
     </div>
   </MDBCol>
-  <MDBCol lg="1" class="mt-4">
+  <MDBCol lg="3" class="mt-4">
     <Scrollspy/>
   </MDBCol>
 </template>
