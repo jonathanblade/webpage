@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import CV from '../views/CV.vue'
+import PageNotFound from '../views/PageNotFound.vue'
 
 const routes = [
   {
@@ -12,6 +13,11 @@ const routes = [
     path: '/cv',
     name: 'CV',
     component: CV
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'PageNotFound',
+    component: PageNotFound
   }
 ]
 
