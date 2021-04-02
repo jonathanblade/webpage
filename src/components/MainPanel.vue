@@ -7,6 +7,7 @@
       <li class="list-inline-item"><a href="https://vk.com/id34885502" target="_blank"><small>Вконтакте</small></a></li>
       <li class="list-inline-item"><a href="https://t.me/jonathanblade" target="_blank"><small>Telegram</small></a></li>
       <li class="list-inline-item"><a href="https://github.com/jonathanblade" target="_blank"><small>Github</small></a></li>
+      <li class="list-inline-item"><a href="mailto:mail@syrovatskiy.tk"><small>Почта</small></a></li>
     </ul>
     <ul class="nav flex-column">
       <router-link class="mainpanel-nav-link" active-class="mainpanel-nav-link-active" :to="{ name: 'Home' }">Главная</router-link>
