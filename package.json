@@ -8,7 +8,7 @@
     "start": "vue-cli-service serve --open"
   },
   "dependencies": {
-    "mdb-vue-ui-kit": "^1.0.0-beta1",
+    "mdb-vue-ui-kit": "^1.0.0-beta2",
     "vue": "^3.0.11",
     "vue-router": "^4.0.6"
   },
