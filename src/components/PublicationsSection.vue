@@ -2,7 +2,7 @@
   <section id="publications">
     <h3>Публикации</h3><hr>
     <ul class="list-unstyled">
-      <li v-for="item in data">
+      <li v-for="item in publicationsData">
         <PublicationItem :item="item"/>
       </li>
     </ul>
@@ -14,14 +14,12 @@ import PublicationItem from '@/components/PublicationItem.vue';
 import publicationsData from '@/assets/publications.json';
 
 export default {
-  name: 'Publications',
+  name: 'PublicationsSection',
   components: {
     PublicationItem
   },
-  data() {
-    return {
-      data: publicationsData
-    };
-  }
+  data: () => ({
+    publicationsData: publicationsData
+  })
 };
 </script>

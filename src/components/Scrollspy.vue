@@ -4,6 +4,7 @@
       <ul class="nav flex-column nav-pills menu-sidebar" v-mdb-scrollspy="scrollspy">
         <li class="nav-item"><a class="nav-link" href="#education">Образование</a></li>
         <li class="nav-item"><a class="nav-link" href="#work-experience">Опыт работы</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Проекты</a></li>
         <li class="nav-item"><a class="nav-link" href="#publications">Публикации</a></li>
       </ul>
     </div>
