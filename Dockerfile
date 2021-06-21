@@ -2,8 +2,7 @@ FROM node:lts-alpine as build-stage
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
-COPY ./.browserslistrc ./.browserslistrc
-COPY ./public ./public 
+COPY ./public ./public
 COPY ./src ./src
 RUN npm run build
 
