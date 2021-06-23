@@ -7,7 +7,6 @@
           projectTitle="IGS ROTI Maps"
           projectLink="https://igs-roti.herokuapp.com"
           projectBio="Web tool for visualization of the IGS ROTI Maps product."
-          githubLink="https://github.com/jonathanblade/igs-roti"
         />
       </MDBCol>
     </MDBRow>
