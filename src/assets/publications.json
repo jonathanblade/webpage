@@ -7,7 +7,8 @@
       "volume": "24"
     },
     "href": "https://doi.org/10.1007/s10291-020-00983-2",
-    "year": "2020"
+    "year": "2020",
+    "category": "article"
   },
   {
     "title": "Small-Scale Ionospheric Irregularities of Auroral Origin at Mhref-latitudes during the 22 June 2015 Magnetic Storm and Their Effect on GPS Positioning",
@@ -18,7 +19,8 @@
       "number": "10"
     },
     "href": "https://doi.org/10.3390/rs12101579",
-    "year": "2020"
+    "year": "2020",
+    "category": "article"
   },
   {
     "title": "Effect of strong geomagnetic storm on GNSS precise point positioning quality",
@@ -27,7 +29,8 @@
       "name": "Proceedings of International Conference «Atmosphere, ionosphere, safety»"
     },
     "href": "http://ais2020.ru:1818/AIS%20Proceedings%202020.pdf#page=100",
-    "year": "2020"
+    "year": "2020",
+    "category": "proceedings"
   },
   {
     "title": "Changes in the GNSS precise point positioning accuracy during a strong geomagnetic storm",
@@ -37,7 +40,8 @@
       "volume": "196"
     },
     "href": "https://doi.org/10.1051/e3sconf/202019601001",
-    "year": "2020"
+    "year": "2020",
+    "category": "proceedings"
   },
   {
     "title": "Can we detect X/M/C-class solar flares from global navigation satellite system data?",
@@ -47,7 +51,8 @@
       "volume": "12"
     },
     "href": "https://doi.org/10.1016/j.rinp.2018.12.069",
-    "year": "2019"
+    "year": "2019",
+    "category": "article"
   },
   {
     "title": "Точность позиционирования GPS в различных режимах при активном воздействии на ионосферу мощным КВ-излучением нагревного стенда СУРА",
@@ -58,7 +63,8 @@
       "number": "12"
     },
     "href": "https://radiophysics.unn.ru/issues/2019/12/906",
-    "year": "2019"
+    "year": "2019",
+    "category": "article"
   },
   {
     "title": "Влияние солнечных вспышек на ионосферу Земли в 24-ом цикле солнечной активности",
@@ -67,7 +73,8 @@
       "name": "Учёные записки Физического факультета МГУ"
     },
     "href": "http://uzmu.phys.msu.ru/abstract/2018/4/1840403",
-    "year": "2018"
+    "year": "2018",
+    "category": "article"
   },
   {
     "title": "GNSS Scintillations in Siberia During 2014-2017",
@@ -76,7 +83,8 @@
       "name": "2nd URSI Atlantic Radio Science Meeting (AT-RASC)"
     },
     "href": "https://doi.org/10.23919/URSI-AT-RASC.2018.8471413",
-    "year": "2018"
+    "year": "2018",
+    "category": "proceedings"
   },
   {
     "title": "The 6 September 2017 X‐Class Solar Flares and Their Impacts on the Ionosphere, GNSS, and HF Radio Wave Propagation",
@@ -87,7 +95,8 @@
       "number": "8"
     },
     "href": "https://doi.org/10.1029/2018SW001932",
-    "year": "2018"
+    "year": "2018",
+    "category": "article"
   },
   {
     "title": "Tool for Creating Maps of GNSS Total Electron Content Variation",
@@ -96,7 +105,8 @@
       "name": "Progress in Electromagnetics Research Symposium (PIERS-Toyama)"
     },
     "href": "https://doi.org/10.23919/PIERS.2018.8597604",
-    "year": "2018"
+    "year": "2018",
+    "category": "proceedings"
   },
   {
     "title": "Измерение мерцаний навигационного сигнала с использованием оборудования Novatel GPStation-6 на средних широтах",
@@ -105,6 +115,7 @@
       "name": "Труды БШФФ"
     },
     "href": "http://bsfp.iszf.irk.ru/sites/default/files/school/2017/materials_2017/146-148Syrovatskiy.pdf",
-    "year": "2017"
+    "year": "2017",
+    "category": "proceedings"
   }
 ]
