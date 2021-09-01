@@ -18,7 +18,11 @@
           <li class="list-inline-item"><h5>ООО «Платформа Качества» (г. Москва)</h5></li>
           <li class="list-inline-item float-end text-muted"><small>2021 - now</small></li>
         </ul>
-        <p>Backend-разработчик</p>
+        <p>Разработчик</p>
+        <ul class="list-unstyled note note-primary text-muted">
+          <li><small>&#8226; Backend-разработка новых и поддержка старых приложений</small></li>
+          <li><small>&#8226; Написание драйверов для измерительных устройств (термометров, алкотестеров, пульсоксиметров, тонометров)</small></li>
+        </ul>
       </li>
     </ul>
   </section>
