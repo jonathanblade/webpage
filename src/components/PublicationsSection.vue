@@ -2,15 +2,15 @@
   <section id="publications">
     <h3>Публикации</h3><hr>
     <ul class="list-unstyled text-center">
-      <a href="" onclick="return false;">
-        <MDBBadge @click="publicationCategory = 'all'" :class="{ 'bg-primary': publicationCategory == 'all', 'text-light': publicationCategory == 'all', 'text-dark': publicationCategory != 'all' }" pill>Все</MDBBadge>
-      </a>
-      <a href="" onclick="return false;">
-        <MDBBadge @click="publicationCategory = 'article'" :class="{ 'bg-primary': publicationCategory == 'article', 'text-light': publicationCategory == 'article', 'text-dark': publicationCategory != 'article' }" pill>Журнальные статьи</MDBBadge>
-      </a>
-      <a href="" onclick="return false;">
-        <MDBBadge @click="publicationCategory = 'proceedings'" :class="{ 'bg-primary': publicationCategory == 'proceedings', 'text-light': publicationCategory == 'proceedings', 'text-dark': publicationCategory != 'proceedings' }" pill>Труды конференций</MDBBadge>
-      </a>
+      <li class="publication-category">
+        <MDBBadge @click="publicationCategory = 'all'" class="publication-category-badge" :class="{ 'bg-primary': publicationCategory == 'all', 'text-light': publicationCategory == 'all', 'text-dark': publicationCategory != 'all' }" pill>Все</MDBBadge>
+      </li>
+      <li class="publication-category">
+        <MDBBadge @click="publicationCategory = 'article'" class="publication-category-badge" :class="{ 'bg-primary': publicationCategory == 'article', 'text-light': publicationCategory == 'article', 'text-dark': publicationCategory != 'article' }" pill>Журнальные статьи</MDBBadge>
+      </li>
+      <li class="publication-category">
+        <MDBBadge @click="publicationCategory = 'proceedings'" class="publication-category-badge" :class="{ 'bg-primary': publicationCategory == 'proceedings', 'text-light': publicationCategory == 'proceedings', 'text-dark': publicationCategory != 'proceedings' }" pill>Труды конференций</MDBBadge>
+      </li>
     </ul>
     <ul class="list-unstyled">
       <li v-for="item in filteredPublications">
@@ -50,3 +50,13 @@ export default {
   }
 };
 </script>
+
+<style>
+.publication-category {
+  display: inline;
+  cursor: pointer;
+}
+.publication-category-badge {
+  border: 1px solid #ced4da;
+}
+</style>
