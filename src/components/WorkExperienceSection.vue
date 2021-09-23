@@ -10,7 +10,7 @@
         <p>Инженер-программист</p>
         <ul class="list-unstyled note note-primary text-muted">
           <li><small>&#8226; Обработка и анализ данных глобальных навигационных спутниковых систем</small></li>
-          <li><small>&#8226; Участие в разработке системы <a href="https://simurg.iszf.irk.ru" target='_blank'>SIMuRG</a></small></li>
+          <li><small>&#8226; Участие в разработке системы <a href="https://simurg.iszf.irk.ru" target='_blank'>SIMuRG</a> (небольшие доработки и рефакторинг существубщего кода)</small></li>
         </ul>
       </li>
       <li class="mb-3">
@@ -21,6 +21,7 @@
         <p>Разработчик</p>
         <ul class="list-unstyled note note-primary text-muted">
           <li><small>&#8226; Backend-разработка новых и поддержка старых приложений</small></li>
+          <li><small>&#8226; Контейнеризация и развёртывание приложений на стороне заказчика</small></li>
           <li><small>&#8226; Написание драйверов для измерительных устройств (термометров, алкотестеров, пульсоксиметров, тонометров)</small></li>
         </ul>
       </li>
