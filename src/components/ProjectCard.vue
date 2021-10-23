@@ -1,5 +1,5 @@
 <template>
-  <MDBCard class="mb-3 hover-shadow" border="#6c757d" bg="white">
+  <MDBCard class="mb-3 hover-shadow" border="#6c757d">
     <MDBCardHeader>
       <a :href="projectLink" class="stretched-link" target="_blank">{{ projectTitle }}</a>
     </MDBCardHeader>

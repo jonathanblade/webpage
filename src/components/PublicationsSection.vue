@@ -3,13 +3,13 @@
     <h3>Публикации</h3><hr>
     <ul class="list-unstyled text-center">
       <li class="publication-category">
-        <MDBBadge @click="publicationCategory = 'all'" class="publication-category-badge" :class="{ 'bg-primary': publicationCategory == 'all', 'text-light': publicationCategory == 'all', 'text-dark': publicationCategory != 'all' }" pill>Все</MDBBadge>
+        <MDBBadge @click="publicationCategory = 'all'" :class="{ 'bg-warning': publicationCategory == 'all', 'text-light': publicationCategory == 'all', 'text-muted': publicationCategory != 'all' }" pill>Все</MDBBadge>
       </li>
       <li class="publication-category">
-        <MDBBadge @click="publicationCategory = 'article'" class="publication-category-badge" :class="{ 'bg-primary': publicationCategory == 'article', 'text-light': publicationCategory == 'article', 'text-dark': publicationCategory != 'article' }" pill>Журнальные статьи</MDBBadge>
+        <MDBBadge @click="publicationCategory = 'article'" :class="{ 'bg-warning': publicationCategory == 'article', 'text-light': publicationCategory == 'article', 'text-muted': publicationCategory != 'article' }" pill>Журнальные статьи</MDBBadge>
       </li>
       <li class="publication-category">
-        <MDBBadge @click="publicationCategory = 'proceedings'" class="publication-category-badge" :class="{ 'bg-primary': publicationCategory == 'proceedings', 'text-light': publicationCategory == 'proceedings', 'text-dark': publicationCategory != 'proceedings' }" pill>Труды конференций</MDBBadge>
+        <MDBBadge @click="publicationCategory = 'proceedings'" :class="{ 'bg-warning': publicationCategory == 'proceedings', 'text-light': publicationCategory == 'proceedings', 'text-muted': publicationCategory != 'proceedings' }" pill>Труды конференций</MDBBadge>
       </li>
     </ul>
     <ul class="list-unstyled">
@@ -55,8 +55,7 @@ export default {
 .publication-category {
   display: inline;
   cursor: pointer;
-}
-.publication-category-badge {
-  border: 1px solid #ced4da;
+  margin-right: .25rem;
+  margin-left: .25rem;
 }
 </style>

@@ -1,5 +1,9 @@
 <template>
   <div class="sticky-top" style="top: 1.5rem;">
+    <ul class="list-inline text-center">
+      <li class="list-inline-item">🌞</li>
+      <li class="list-inline-item"><ThemeSwitcher/></li>
+    </ul>
     <img class="w-25 rounded-circle" src="../assets/me.png">
     <p class="mt-4"><b>Семён Сыроватский</b></p>
     <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
@@ -17,25 +21,23 @@
 </template>
 
 <script>
+import ThemeSwitcher from '@/components/ThemeSwitcher.vue';
+
 export default {
-  name: 'MainPanel'
+  name: 'MainPanel',
+  components: {
+    ThemeSwitcher
+  }
 };
 </script>
 
 <style>
 .mainpanel-nav-link {
-  border-left: 5px solid white;
+  border-left: 5px solid transparent;
   padding: 0.7rem;
-  color: #6c757d;
-  text-decoration: none;
-}
-.mainpanel-nav-link:hover {
-  color: black;
-  text-decoration: none;
 }
 .mainpanel-nav-link-active {
-  border-left: 5px solid black;
-  color: black;
-  background-color: #f8f9fa;
+  border-left: 5px solid orange;
+  padding: 0.7rem;
 }
 </style>

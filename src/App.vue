@@ -23,7 +23,6 @@ export default {
 
 #app {
   font-family: 'Ubuntu', sans-serif;
-  color: black;
 }
 a {
   font-weight: bold;
