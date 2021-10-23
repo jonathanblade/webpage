@@ -55,7 +55,5 @@ export default {
 .publication-category {
   display: inline;
   cursor: pointer;
-  margin-right: .25rem;
-  margin-left: .25rem;
 }
 </style>
