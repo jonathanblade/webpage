@@ -25,25 +25,13 @@ export default {
     const storageTheme = localStorage.getItem('isDarkTheme');
     const colorThemeLink = document.getElementById('color-theme-link');
     const themeSwitcher = ref(storageTheme ? JSON.parse(storageTheme).value : undefined);
-    const replaceElementsClass = (elements, oldClass, newClass) => {
-      for (let i = 0; i < elements.length; i++) {
-        elements[i].classList.remove(oldClass);
-        elements[i].classList.add(newClass);
-      }
-    };
     const enableDarkTheme = () => {
       colorThemeLink.setAttribute('href', darkTheme);
-      setTimeout(() => {
-        document.body.style.color = 'white';
-        replaceElementsClass(document.getElementsByClassName('note'), 'note-light', 'note-dark');
-      }, 1);
+      document.body.style.color = 'white';
     };
     const enableLightTheme = () => {
       colorThemeLink.setAttribute('href', lightTheme);
-      setTimeout(() => {
-        document.body.style.color = 'black';
-        replaceElementsClass(document.getElementsByClassName('note'), 'note-dark', 'note-light');
-      }, 1);
+      document.body.style.color = 'black';
     };
     const switchColorTheme = (isDarkTheme) => {
       if (isDarkTheme) {
