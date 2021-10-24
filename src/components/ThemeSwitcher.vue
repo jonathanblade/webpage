@@ -1,15 +1,23 @@
 <template>
-  <MDBSwitch label="🌙" v-model="themeSwitcher"/>
+  <ul class="list-inline text-center">
+    <li class="list-inline-item px-2"><LightThemeIcon/></li>
+    <li class="list-inline-item"><MDBSwitch v-model="themeSwitcher"/></li>
+    <li class="list-inline-item"><DarkThemeIcon/></li>
+  </ul>
 </template>
 
 <script>
 import { ref, watch } from 'vue';
 import { MDBSwitch } from 'mdb-vue-ui-kit';
+import LightThemeIcon from '@/components/LightThemeIcon';
+import DarkThemeIcon from '@/components/DarkThemeIcon';
 
 export default {
   name: 'ThemeSwitcher',
   components: {
-    MDBSwitch
+    MDBSwitch,
+    LightThemeIcon,
+    DarkThemeIcon
   },
   setup() {
     const lightTheme = 'css/mdb.min.css';

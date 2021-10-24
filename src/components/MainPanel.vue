@@ -1,9 +1,6 @@
 <template>
   <div class="sticky-top" style="top: 1.5rem;">
-    <ul class="list-inline text-center">
-      <li class="list-inline-item">🌞</li>
-      <li class="list-inline-item"><ThemeSwitcher/></li>
-    </ul>
+    <ThemeSwitcher/>
     <img class="w-25 rounded-circle" src="../assets/me.png">
     <p class="mt-4"><b>Семён Сыроватский</b></p>
     <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
