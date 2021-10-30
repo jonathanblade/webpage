@@ -4,6 +4,7 @@
     border="#e0e0e0"
     style="background-color: transparent"
   >
+    <MDBCardImg :src="projectImg" />
     <MDBCardHeader style="border-bottom: 1px solid #e0e0e0 !important">
       <a :href="projectLink" class="stretched-link" target="_blank">{{
         projectTitle
@@ -21,6 +22,7 @@ import {
   MDBCardBody,
   MDBCardHeader,
   MDBCardText,
+  MDBCardImg,
 } from "mdb-vue-ui-kit";
 
 export default {
@@ -30,6 +32,7 @@ export default {
     MDBCardBody,
     MDBCardHeader,
     MDBCardText,
+    MDBCardImg,
   },
   props: {
     projectTitle: {
@@ -41,6 +44,10 @@ export default {
       default: "",
     },
     projectBio: {
+      type: String,
+      default: "",
+    },
+    projectImg: {
       type: String,
       default: "",
     },

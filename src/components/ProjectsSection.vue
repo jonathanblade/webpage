@@ -5,6 +5,7 @@
     <MDBRow>
       <MDBCol sm="12" md="6">
         <ProjectCard
+          :project-img="rotiImg"
           project-title="IGS ROTI Maps"
           project-link="https://igs-roti.herokuapp.com"
           project-bio="Web tool for visualization of the IGS ROTI Maps product."
@@ -17,6 +18,7 @@
 <script>
 import { MDBRow, MDBCol } from "mdb-vue-ui-kit";
 import ProjectCard from "@/components/ProjectCard.vue";
+import rotiImg from "@/assets/ROTI.png";
 
 export default {
   name: "ProjectsSection",
@@ -24,6 +26,11 @@ export default {
     MDBRow,
     MDBCol,
     ProjectCard,
+  },
+  data() {
+    return {
+      rotiImg: rotiImg,
+    };
   },
 };
 </script>
