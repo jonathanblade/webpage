@@ -1,8 +1,8 @@
 <template>
   <div class="mb-3">
-    {{ item.title }}<br>
+    {{ item.title }}<br />
     <small class="text-muted">
-      {{ item.authors }}<br>
+      {{ item.authors }}<br />
       <a :href="item.href" target="_blank"><i class="fas fa-link"></i></a>
       {{ item.journal.name }}
       <span v-if="item.journal.volume">{{ item.journal.volume }}&nbsp;</span>
@@ -14,7 +14,12 @@
 
 <script>
 export default {
-  name: 'PublicationItem',
-  props: ['item']
+  name: "PublicationItem",
+  props: {
+    item: {
+      type: Object,
+      default: null,
+    },
+  },
 };
 </script>
