@@ -37,8 +37,7 @@ export default {
 .nav-link {
   color: #757575 !important;
 }
-.nav-link.active,
-.nav-link:focus {
+.nav-link.active {
   color: #1266f1 !important;
 }
 </style>
