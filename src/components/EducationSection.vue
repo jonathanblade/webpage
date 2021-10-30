@@ -1,8 +1,9 @@
 <template>
   <section id="education">
-    <h3>Образование</h3><hr>
+    <h3>Образование</h3>
+    <hr />
     <ul class="list-unstyled">
-      <li v-for="item in educationData">
+      <li v-for="item in educationData" :key="item.id">
         <EducationItem :item="item" />
       </li>
     </ul>
@@ -10,16 +11,16 @@
 </template>
 
 <script>
-import EducationItem from '@/components/EducationItem.vue'
-import educationData from '@/assets/education.json';
+import EducationItem from "@/components/EducationItem.vue";
+import educationData from "@/assets/education.json";
 
 export default {
-  name: 'EducationSection',
-  components: { 
-    EducationItem 
+  name: "EducationSection",
+  components: {
+    EducationItem,
   },
   data: () => ({
-    educationData: educationData
-  })
+    educationData: educationData,
+  }),
 };
 </script>

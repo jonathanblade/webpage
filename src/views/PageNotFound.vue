@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import { MDBCol } from 'mdb-vue-ui-kit';
+import { MDBCol } from "mdb-vue-ui-kit";
 
 export default {
-  name: 'PageNotFound',
+  name: "PageNotFound",
   components: {
-    MDBCol
-  }
+    MDBCol,
+  },
 };
 </script>
