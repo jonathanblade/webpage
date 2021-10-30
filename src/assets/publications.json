@@ -1,5 +1,6 @@
 [
   {
+    "id": 11,
     "title": "SIMuRG: System for Ionosphere Monitoring and Research from GNSS",
     "authors": "Yu.V. Yasyukevich, A.V. Kiselev, I.V. Zhivetiev, I.K. Edemskiy, S.V. Syrovatskii, B.M. Maletckii, A.M. Vesnin",
     "journal": {
@@ -11,11 +12,12 @@
     "category": "article"
   },
   {
+    "id": 10,
     "title": "Small-Scale Ionospheric Irregularities of Auroral Origin at Mhref-latitudes during the 22 June 2015 Magnetic Storm and Their Effect on GPS Positioning",
     "authors": "Yu.V. Yasyukevich, R.V. Vasilyev, K.G. Ratovsky, A.G. Setov, M.V. Globa, S.V. Syrovatskii, A.S. Yasyukevich, A.V. Kiselev, A.M. Vesnin",
     "journal": {
-    "name": "Remote Sensing",
-    "volume": "12",
+      "name": "Remote Sensing",
+      "volume": "12",
       "number": "10"
     },
     "href": "https://doi.org/10.3390/rs12101579",
@@ -23,6 +25,7 @@
     "category": "article"
   },
   {
+    "id": 9,
     "title": "Effect of strong geomagnetic storm on GNSS precise point positioning quality",
     "authors": "S.V. Syrovatskii, A.S. Yasyukevich, Yu.V. Yasyukevich",
     "journal": {
@@ -33,6 +36,7 @@
     "category": "proceedings"
   },
   {
+    "id": 8,
     "title": "Changes in the GNSS precise point positioning accuracy during a strong geomagnetic storm",
     "authors": "A.S. Yasyukevich, S.V. Syrovatskii, Yu.V. Yasyukevich",
     "journal": {
@@ -44,6 +48,7 @@
     "category": "proceedings"
   },
   {
+    "id": 7,
     "title": "Can we detect X/M/C-class solar flares from global navigation satellite system data?",
     "authors": "S.V. Syrovatskiy, Yu.V. Yasyukevich, I.K. Edemskiy, A.M. Vesnin, S.V. Voeykov, I.V. Zhivetiev",
     "journal": {
@@ -55,6 +60,7 @@
     "category": "article"
   },
   {
+    "id": 6,
     "title": "Точность позиционирования GPS в различных режимах при активном воздействии на ионосферу мощным КВ-излучением нагревного стенда СУРА",
     "authors": "Ю.В. Ясюкевич, С.В. Сыроватский, А.М. Падохин, В.Л. Фролов, А.М. Веснин, Д.А. Затолокин, Г.А. Курбатов, Р.В. Загретдинов, А.В. Першин, А.С. Ясюкевич",
     "journal": {
@@ -67,6 +73,7 @@
     "category": "article"
   },
   {
+    "id": 5,
     "title": "Влияние солнечных вспышек на ионосферу Земли в 24-ом цикле солнечной активности",
     "authors": "С.В. Сыроватский, Ю.В. Ясюкевич, А.М. Веснин, И.К. Едемский, С.В. Воейков, И.В. Живетьев",
     "journal": {
@@ -77,6 +84,7 @@
     "category": "article"
   },
   {
+    "id": 4,
     "title": "GNSS Scintillations in Siberia During 2014-2017",
     "authors": "Yu.V. Yasyukevich, A.M. Vesnin, D.A. Zatolokin, S.V. Syrovatskii, V.V. Demyanov, M.A. Sergeeva",
     "journal": {
@@ -87,6 +95,7 @@
     "category": "proceedings"
   },
   {
+    "id": 3,
     "title": "The 6 September 2017 X‐Class Solar Flares and Their Impacts on the Ionosphere, GNSS, and HF Radio Wave Propagation",
     "authors": "Yu.V. Yasyukevich, E.I. Astafyeva, A.M. Padokhin, V.A. Ivanova, S.V. Syrovatskii, A.V. Podlesnyi",
     "journal": {
@@ -99,6 +108,7 @@
     "category": "article"
   },
   {
+    "id": 2,
     "title": "Tool for Creating Maps of GNSS Total Electron Content Variation",
     "authors": "Yu.V. Yasyukevich, I.V. Zhivetiev, A.V. Kiselev, I.K. Edemskiy, S.V. Syrovatsky, A.S. Shabalin, A.M. Vesnin",
     "journal": {
@@ -109,6 +119,7 @@
     "category": "proceedings"
   },
   {
+    "id": 1,
     "title": "Измерение мерцаний навигационного сигнала с использованием оборудования Novatel GPStation-6 на средних широтах",
     "authors": "С.В. Сыроватский, Ю.В. Ясюкевич, А.М. Веснин",
     "journal": {
