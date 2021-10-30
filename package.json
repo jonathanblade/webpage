@@ -2,6 +2,7 @@
   "name": "webpage",
   "version": "1.0.0",
   "description": "A portfolio webpage",
+  "license": "MIT",
   "author": "Semen Syrovatskiy <mail@syrovatskiy.tk>",
   "scripts": {
     "dev": "vite",
