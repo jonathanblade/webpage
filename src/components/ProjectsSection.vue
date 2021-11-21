@@ -13,7 +13,7 @@
       </MDBCol>
       <MDBCol sm="12" md="6">
         <ProjectCard
-          :project-img="npmImg"
+          :project-img="omronjsImg"
           project-title="OmronJS"
           project-link="https://www.npmjs.com/package/@jonathanblade/omronjs"
           project-bio="Node.js wrapper for libomron."
@@ -27,7 +27,7 @@
 import { MDBRow, MDBCol } from "mdb-vue-ui-kit";
 import ProjectCard from "@/components/ProjectCard.vue";
 import rotiImg from "@/assets/ROTI.png";
-import npmImg from "@/assets/npm.png";
+import omronjsImg from "@/assets/omronjs.png";
 
 export default {
   name: "ProjectsSection",
@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       rotiImg: rotiImg,
-      npmImg: npmImg,
+      omronjsImg: omronjsImg,
     };
   },
 };
