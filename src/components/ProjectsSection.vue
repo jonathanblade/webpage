@@ -11,6 +11,14 @@
           project-bio="Web tool for visualization of the IGS ROTI Maps product."
         />
       </MDBCol>
+      <MDBCol sm="12" md="6">
+        <ProjectCard
+          :project-img="npmImg"
+          project-title="OmronJS"
+          project-link="https://www.npmjs.com/package/@jonathanblade/omronjs"
+          project-bio="Node.js wrapper for libomron."
+        />
+      </MDBCol>
     </MDBRow>
   </section>
 </template>
@@ -19,6 +27,7 @@
 import { MDBRow, MDBCol } from "mdb-vue-ui-kit";
 import ProjectCard from "@/components/ProjectCard.vue";
 import rotiImg from "@/assets/ROTI.png";
+import npmImg from "@/assets/npm.png";
 
 export default {
   name: "ProjectsSection",
@@ -30,6 +39,7 @@ export default {
   data() {
     return {
       rotiImg: rotiImg,
+      npmImg: npmImg,
     };
   },
 };
