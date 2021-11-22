@@ -1,6 +1,6 @@
 <template>
   <MDBCard
-    class="mb-3 hover-shadow"
+    class="mb-3 hover-shadow project-card"
     border="#e0e0e0"
     style="background-color: transparent"
   >
@@ -54,3 +54,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.project-card:hover {
+  transform: scale(0.9);
+}
+</style>
