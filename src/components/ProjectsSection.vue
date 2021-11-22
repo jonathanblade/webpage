@@ -15,7 +15,7 @@
         <ProjectCard
           :project-img="omronjsImg"
           project-title="OmronJS"
-          project-link="https://www.npmjs.com/package/@jonathanblade/omronjs"
+          project-link="https://github.com/jonathanblade/omronjs"
           project-bio="Node.js wrapper for libomron."
         />
       </MDBCol>
