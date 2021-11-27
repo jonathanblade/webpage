@@ -5,23 +5,70 @@
     <p class="mt-4"><b>Семён Сыроватский</b></p>
     <p>Аспирант физического факультета МГУ имeни М.В. Ломоносова.</p>
     <ul class="list-inline">
-      <li class="list-inline-item">
+      <li class="list-inline-item mx-2">
         <a href="https://vk.com/id34885502" target="_blank"
-          ><small>Вконтакте</small></a
-        >
+          ><i
+            class="
+              fab
+              fa-vk
+              tw-text-gray-500
+              hover:tw-text-black
+              dark:hover:tw-text-white
+            "
+          ></i
+        ></a>
       </li>
-      <li class="list-inline-item">
+      <li class="list-inline-item mx-2">
         <a href="https://t.me/jonathanblade" target="_blank"
-          ><small>Telegram</small></a
-        >
+          ><i
+            class="
+              fab
+              fa-telegram
+              tw-text-gray-500
+              hover:tw-text-black
+              dark:hover:tw-text-white
+            "
+          ></i
+        ></a>
       </li>
-      <li class="list-inline-item">
+      <li class="list-inline-item mx-2">
         <a href="https://github.com/jonathanblade" target="_blank"
-          ><small>Github</small></a
-        >
+          ><i
+            class="
+              fab
+              fa-github
+              tw-text-gray-500
+              hover:tw-text-black
+              dark:hover:tw-text-white
+            "
+          ></i
+        ></a>
       </li>
-      <li class="list-inline-item">
-        <a href="mailto:mail@syrovatskiy.tk"><small>Почта</small></a>
+      <li class="list-inline-item mx-2">
+        <a href="mailto:mail@syrovatskiy.tk"
+          ><i
+            class="
+              fas
+              fa-envelope
+              tw-text-gray-500
+              hover:tw-text-black
+              dark:hover:tw-text-white
+            "
+          ></i
+        ></a>
+      </li>
+      <li class="list-inline-item mx-2">
+        <a href="https://medium.com/@jonathanblade" target="_blank"
+          ><i
+            class="
+              fab
+              fa-medium
+              tw-text-gray-500
+              hover:tw-text-black
+              dark:hover:tw-text-white
+            "
+          ></i
+        ></a>
       </li>
     </ul>
     <ul class="nav flex-column">
