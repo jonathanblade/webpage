@@ -12,7 +12,7 @@
     "format": "prettier --write ./src/**/*.{vue,js}"
   },
   "dependencies": {
-    "mdb-vue-ui-kit": "^1.7.0",
+    "mdb-vue-ui-kit": "^1.8.0",
     "vue": "^3.2.23",
     "vue-router": "^4.0.12"
   },
