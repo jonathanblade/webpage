@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "mdb-vue-ui-kit": "^1.7.0",
-    "vue": "^3.2.23",
+    "vue": "^3.2.26",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
