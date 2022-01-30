@@ -1,5 +1,18 @@
 [
   {
+    "id": 12,
+    "title": "Ionospheric Disturbances and Irregularities During the 25–26 August 2018 Geomagnetic Storm",
+    "authors": "E. Astafyeva, Yu.V. Yasyukevich, B. Maletckii, A. Oinats, A. Vesnin, A.S. Yasyukevich, S. Syrovatskii, N. Guendouz",
+    "journal": {
+      "name": "JGR Space Physics",
+      "volume": "127",
+      "number": "1"
+    },
+    "href": "http://doi.org/10.1029/2021JA029843",
+    "year": "2021",
+    "category": "article"
+  },
+  {
     "id": 11,
     "title": "SIMuRG: System for Ionosphere Monitoring and Research from GNSS",
     "authors": "Yu.V. Yasyukevich, A.V. Kiselev, I.V. Zhivetiev, I.K. Edemskiy, S.V. Syrovatskii, B.M. Maletckii, A.M. Vesnin",
