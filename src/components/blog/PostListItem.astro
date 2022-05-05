@@ -1,0 +1,16 @@
+---
+import TextMuted from "../core/TextMuted.astro";
+
+const { item } = Astro.props;
+---
+
+<li>
+  <a
+  class="my-10 block rounded-lg border px-3 py-2 transition duration-400 hover:scale-105 hover:shadow-xl"
+  href={item.url}
+  >
+    <p class="text-sm">{item.frontmatter.date}</p>
+    <p class="font-medium text-orange-900">{item.frontmatter.title}</p>
+    <TextMuted>{item.frontmatter.description}</TextMuted>
+  </a>
+</li>

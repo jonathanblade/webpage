@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Timeline from '../components/about/Timeline.astro';
+
+let title = 'Обо мне | Семён Сыроватский';
+---
+
+<BaseLayout {title}>
+  <div class="text-center">
+    <p class="text-9xl">Таймл<span class="text-teal-900 underline">а</span>йн</p>
+  </div>
+  <Timeline />
+</BaseLayout>

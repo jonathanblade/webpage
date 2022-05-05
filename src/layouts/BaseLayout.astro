@@ -1,0 +1,26 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+
+const { title } = Astro.props;
+---
+
+<html
+  x-data="{'darkMode': localStorage.getItem('darkMode') === 'true'}"
+  x-init="$watch('darkMode', value => localStorage.setItem('darkMode', value))"
+  x-bind:class="{'dark': darkMode}"
+>
+  <head>
+    <BaseHead {title} />
+  </head>
+  <body class="bg-white dark:bg-stone-800 dark:text-white">
+    <Header />
+    <main class="mx-40 my-10">
+      <div class="xl:grid xl:grid-cols-4">
+        <div class="xl:col-start-2 xl:col-end-4">
+          <slot />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

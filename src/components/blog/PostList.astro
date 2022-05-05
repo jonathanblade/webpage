@@ -1,0 +1,11 @@
+---
+import PostListItem from "./PostListItem.astro";
+
+const posts = await Astro.glob('../../pages/blog/*.md');
+---
+
+<ul>
+  {posts.map(post =>
+  <!-- prettier-ignore -->
+  <PostListItem item={post} />)}
+</ul>

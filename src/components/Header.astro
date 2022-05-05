@@ -1,0 +1,48 @@
+---
+import { Icon } from 'astro-icon';
+
+const items = [
+  {'href': '/', 'text': 'Главная'},
+  {'href': '/about/', 'text': 'Обо мне'},
+  {'href': '/blog/', 'text': 'Блог'},
+  {'href': '/projects/', 'text': 'Проекты'},
+];
+---
+
+<header class="sticky top-0 z-50">
+  <nav
+    class="flex items-center justify-center border-b border-stone-800/10 bg-white/75 text-center backdrop-blur dark:border-stone-50/[0.06] dark:bg-stone-800/75"
+    x-data="{open: false}"
+  >
+    <ul class="xl:flex">
+      {items.map(item =>
+      <li
+        class={Astro.canonicalURL.pathname.slice(0, 2) === item.href.slice(0, 2) ? "active xl:block" : "xl:block"}
+        x-bind:class="open ? 'open' : 'hidden'">
+        <a class="block p-4 uppercase xl:hover:bg-gray-100 dark:xl:hover:bg-stone-900" href={item.href}>{item.text}</a>
+      </li>
+      )}
+    </ul>
+    <button x-on:click="open = !open" class="absolute top-0 right-0 m-5 h-5 w-5 xl:hidden">
+      <Icon name="mdi:menu" x-show="!open" />
+      <Icon name="mdi:close" x-show="open" />
+    </button>
+    <button x-on:click="darkMode = !darkMode" class="absolute top-0 left-0 m-5 h-5 w-5">
+      <Icon name="carbon:sun" x-show="!darkMode" />
+      <Icon name="carbon:moon" x-show="darkMode" />
+    </button>
+  </nav>
+</header>
+
+<style lang="scss">
+  ul {
+    li.active {
+      display: block;
+    }
+    &.open {
+      li {
+        display: block !important;
+      }
+    }
+  }
+</style>

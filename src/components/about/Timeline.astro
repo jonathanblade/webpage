@@ -1,0 +1,52 @@
+---
+import EducationItem from './EducationItem.astro';
+import TimelineItem from './TimelineItem.astro';
+import WorkItem from './WorkItem.astro';
+
+import { EDUCATION, WORK } from '../../data.js';
+
+const ISU = EDUCATION.find((item) => item.id === 1);
+const MSU_MAG = EDUCATION.find((item) => item.id === 2);
+const MSU_ASP = EDUCATION.find((item) => item.id === 3);
+const ISTP = WORK.find((item) => item.id === 1);
+const QAPL = WORK.find((item) => item.id === 2);
+---
+
+<div x-data="{data: 'All'}">
+  <select
+    class="mt-10 cursor-pointer appearance-none rounded-full border bg-transparent py-2 px-3 text-center"
+    x-model="data"
+  >
+    <option>All</option>
+    <option>Education</option>
+    <option>Work</option>
+  </select>
+  <ol class="relative border-l">
+    <div x-show="data == 'All'">
+      <TimelineItem>
+        <time class="text-sm">14 сентября 1996</time>
+        <p class="text-lg font-semibold">День рождения 🎉</p>
+      </TimelineItem>
+    </div>
+    <div x-show="data != 'Work'">
+      <!-- prettier-ignore -->
+      <EducationItem item={ISU} />
+    </div>
+    <div x-show="data != 'Work'">
+      <!-- prettier-ignore -->
+      <EducationItem item={MSU_MAG} />
+    </div>
+    <div x-show="data != 'Education'">
+      <!-- prettier-ignore -->
+      <WorkItem item={ISTP} />
+    </div>
+    <div x-show="data != 'Work'">
+      <!-- prettier-ignore -->
+      <EducationItem item={MSU_ASP} />
+    </div>
+    <div x-show="data != 'Education'">
+      <!-- prettier-ignore -->
+      <WorkItem item={QAPL} />
+    </div>
+  </ol>
+</div>

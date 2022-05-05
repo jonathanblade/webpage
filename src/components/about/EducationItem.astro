@@ -1,0 +1,20 @@
+---
+import TimelineItem from './TimelineItem.astro';
+import LinkDotted from '../core/LinkDotted.astro';
+import TextMuted from '../core/TextMuted.astro';
+
+const { item } = Astro.props;
+---
+
+<TimelineItem>
+  <time class="text-sm">{item.start}-{item.end ? item.end : "now"}</time>
+  <p class="text-lg font-semibold">{item.university}, {item.faculty}</p>
+  <TextMuted>{item.degree}</TextMuted>
+  <p class="font-medium">Специальность</p>
+  <TextMuted>{item.specialization.code + ' ' + item.specialization.name}</TextMuted>
+  <p class="font-medium">Направление</p>
+  <TextMuted>{item.program}</TextMuted>
+  <p class="font-medium">Дипломная работа</p>
+  <!-- prettier-ignore -->
+  <LinkDotted href={item.diploma.href} text={item.diploma.title} />
+</TimelineItem>
