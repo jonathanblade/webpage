@@ -17,9 +17,9 @@ const { title } = Astro.props;
   <body class="flex min-h-screen flex-col bg-white text-darknest dark:bg-stone-800 dark:text-white">
     <!-- prettier-ignore -->
     <Header />
-    <main class="mx-40 my-10 flex-grow">
-      <div class="xl:grid xl:grid-cols-4">
-        <div class="xl:col-start-2 xl:col-end-4">
+    <main class="mx-5 my-10 flex-grow">
+      <div class="grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-3">
+        <div class="col-start-2 md:col-end-5 lg:col-end-4 xl:col-end-3">
           <slot />
         </div>
       </div>
