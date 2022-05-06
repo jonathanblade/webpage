@@ -1,6 +1,4 @@
 ---
-import { Icon } from "astro-icon";
-
 import BaseLayout from "../layouts/BaseLayout.astro";
 import cv from "../assets/hh.pdf";
 
@@ -14,11 +12,8 @@ const title = 'Семён Сыроватский';
   <p class="my-10 text-center">Backend-разработчик. Аспирант физического факультета МГУ.</p>
   <div class="flex justify-end">
     <!-- prettier-ignore -->
-    <a
-      href={cv}
-      class="duration-400 rounded-full bg-index py-2 pl-3 pr-6 text-white shadow-xl transition hover:scale-110"
-    >
-      <Icon class="-mt-1 inline-block h-5 w-5" name="ant-design:paper-clip-outlined" />Резюме</a
+    <a href={cv} class="duration-400 rounded-full bg-index py-2 px-6 text-white shadow-xl transition hover:scale-110"
+      >Резюме</a
     >
   </div>
 </BaseLayout>
