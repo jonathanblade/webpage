@@ -10,8 +10,10 @@ let title = 'Проекты | Семён Сыроватский';
   <div class="text-center">
     <p class="text-7xl xl:text-9xl">Воркш<span class="text-projects underline">о</span>п</p>
   </div>
-  {PROJECTS.map(project =>
-  <!-- prettier-ignore -->
-  <ProjectCard item={project} />
-  )}
+  <div class="mt-10 grid gap-5 lg:grid-cols-2">
+    {PROJECTS.map(project =>
+    <!-- prettier-ignore -->
+    <ProjectCard item={project} />
+    )}
+  </div>
 </BaseLayout>
