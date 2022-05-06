@@ -70,17 +70,17 @@ gpgSign = true
 [include]
 path = ~/.config/git/default
 
-[includeIf "gitdir:/home/sam/Git/Work/**/.git"]
+[includeIf "gitdir:~/Git/Work/**/.git"]
 path = ~/.config/git/work
 ```
 
 6. Проверяем, что всё работает:
 
 ```bash
-$ cd ~/Git/Personal/my-personal-project
+$ cd ~/Git/Personal/my-personal-project/
 $ git config user.signinkey
 8B7B750DE1510076
-$ cd ~/Git/Work/my-work-project
+$ cd ~/Git/Work/my-work-project/
 $ git config user.signinkey
 9993D7308BBCB218
 ```
