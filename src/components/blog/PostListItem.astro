@@ -10,7 +10,7 @@ const { item } = Astro.props;
   href={item.url}
   >
     <p class="text-sm">{item.frontmatter.date}</p>
-    <p class="font-medium text-orange-900">{item.frontmatter.title}</p>
+    <p class="font-medium text-blog">{item.frontmatter.title}</p>
     <TextMuted>{item.frontmatter.description}</TextMuted>
   </a>
 </li>

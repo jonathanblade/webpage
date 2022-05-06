@@ -19,7 +19,7 @@ const items = [
       <li
         class={Astro.canonicalURL.pathname.slice(0, 2) === item.href.slice(0, 2) ? "active xl:block" : "xl:block"}
         x-bind:class="open ? 'open' : 'hidden'">
-        <a class="block p-4 uppercase xl:hover:bg-gray-100 dark:xl:hover:bg-stone-900" href={item.href}>{item.text}</a>
+        <a class="block p-4 uppercase xl:hover:bg-gray-100 dark:xl:hover:bg-darknest" href={item.href}>{item.text}</a>
       </li>
       )}
     </ul>

@@ -13,6 +13,6 @@ const { item } = Astro.props;
   >
     <p class="font-medium text-lg">{item.title}</p>
     <TextMuted>{item.description.long}</TextMuted>
-    <p class="my-2">{item.stack.map(s => <Badge>{s}</Badge>)}</p>
+    <p class="my-2 text-center">{item.stack.map(s => <Badge>{s}</Badge>)}</p>
   </a>
 </div>
