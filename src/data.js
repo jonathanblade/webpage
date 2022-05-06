@@ -15,7 +15,7 @@ export const PROJECTS = [
     title: 'OmronJS',
     description: {
       short: 'Node.js wrapper for libomron.',
-      long: 'npm-пакет, который представляет собой обёртку, работающую при помощи FFI над нативной библиотекой libomron. libomron - это open-source библиотека, написанная на языке С++, которая предназначена для управления тонометрами производства японской компании Omron.',
+      long: 'npm-пакет, который представляет собой обёртку через FFI над нативной библиотекой libomron. libomron - это open-source библиотека, написанная на языке С++, которая предназначена для управления тонометрами производства японской компании Omron.',
     },
     repo: 'https://github.com/omronjs',
     href: 'https://github.com/jonathanblade/omronjs',
