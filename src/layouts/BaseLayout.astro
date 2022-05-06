@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 
 const { title } = Astro.props;
 ---
@@ -13,14 +14,17 @@ const { title } = Astro.props;
   <head>
     <BaseHead {title} />
   </head>
-  <body class="bg-white text-darknest dark:bg-stone-800 dark:text-white">
+  <body class="flex min-h-screen flex-col bg-white text-darknest dark:bg-stone-800 dark:text-white">
+    <!-- prettier-ignore -->
     <Header />
-    <main class="mx-40 my-10">
+    <main class="mx-40 my-10 flex-grow">
       <div class="xl:grid xl:grid-cols-4">
         <div class="xl:col-start-2 xl:col-end-4">
           <slot />
         </div>
       </div>
     </main>
+    <!-- prettier-ignore -->
+    <Footer />
   </body>
 </html>

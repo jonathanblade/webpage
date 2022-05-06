@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon";
+import TextMuted from "./core/TextMuted.astro";
+---
+
+<footer class="flow-root bg-gray-200 p-6 dark:bg-darknest">
+  <div class="float-left text-sm">
+    <TextMuted>© 2022 Семён Сыроватский</TextMuted>
+  </div>
+  <div class="float-right">
+    <ul class="flex">
+      <li class="mx-2">
+        <a href="https://t.me/jonathanblade" target="_blank">
+          <Icon class="duration-400 h-5 w-5 transition hover:scale-110" name="la:telegram-plane" />
+        </a>
+      </li>
+      <li class="mx-2">
+        <a href="https://github.com/jonathanblade" target="_blank">
+          <Icon class="duration-400 h-5 w-5 transition hover:scale-110" name="eva:github-outline" />
+        </a>
+      </li>
+      <li class="mx-2">
+        <a href="mailto:mail@syrovatskiy.tk">
+          <Icon class="duration-400 h-5 w-5 transition hover:scale-110" name="ic:baseline-alternate-email" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
