@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import H1 from '../../components/core/H1.astro';
 import PostList from '../../components/blog/PostList.astro';
 
 const title = 'Блог | Семён Сыроватский';
 ---
 
 <BaseLayout {title}>
-  <div class="text-center">
-    <p class="text-7xl xl:text-9xl">Пост<span class="text-blog underline">ы</span></p>
-  </div>
+  <!-- prettier-ignore -->
+  <H1>Посты</H1>
   <PostList />
 </BaseLayout>

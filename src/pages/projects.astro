@@ -1,19 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ProjectCard from '../components/projects/ProjectCard.astro';
-import { PROJECTS } from '../data.js';
+import H1 from '../components/core/H1.astro';
+import ProjectGrid from '../components/projects/ProjectsGrid.astro';
 
 let title = 'Проекты | Семён Сыроватский';
 ---
 
 <BaseLayout {title}>
-  <div class="text-center">
-    <p class="text-7xl xl:text-9xl">Воркш<span class="text-projects underline">о</span>п</p>
-  </div>
-  <div class="mt-10 grid gap-5 lg:grid-cols-2">
-    {PROJECTS.map(project =>
-    <!-- prettier-ignore -->
-    <ProjectCard item={project} />
-    )}
-  </div>
+  <!-- prettier-ignore -->
+  <H1>Воркшоп</H1>
+  <ProjectGrid />
 </BaseLayout>

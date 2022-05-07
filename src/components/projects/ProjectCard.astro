@@ -7,11 +7,10 @@ const { item } = Astro.props;
 
 <div>
   <a
-    class="duration-400 block rounded-lg border px-3 py-2 transition hover:scale-105 hover:shadow-xl"
+    class="duration-400 block rounded-lg border border-stone-800/10 px-3 py-2 transition hover:scale-105 hover:shadow-xl dark:border-stone-50/[0.06] dark:bg-gray-1000"
     href={item.href}
-    target="_blank"
   >
-    <p class="font-medium text-lg">{item.title}</p>
+    <p class="text-lg font-semibold">{item.title}</p>
     <TextMuted>{item.description.long}</TextMuted>
     <p class="my-2 text-center">{item.stack.map(s => <Badge>{s}</Badge>)}</p>
   </a>

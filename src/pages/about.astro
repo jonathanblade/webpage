@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import H1 from '../components/core/H1.astro';
 import Timeline from '../components/about/Timeline.astro';
 
 let title = 'Обо мне | Семён Сыроватский';
 ---
 
 <BaseLayout {title}>
-  <div class="text-center">
-    <p class="text-7xl xl:text-9xl">Таймл<span class="text-about underline">а</span>йн</p>
-  </div>
+  <!-- prettier-ignore -->
+  <H1>Таймлайн</H1>
   <Timeline />
 </BaseLayout>

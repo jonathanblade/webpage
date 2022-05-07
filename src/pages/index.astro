@@ -1,5 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import H1 from "../components/core/H1.astro";
+import Button from "../components/core/Button.astro";
+
 import cv from "../assets/hh.pdf";
 
 const title = 'Семён Сыроватский';
@@ -7,11 +10,10 @@ const title = 'Семён Сыроватский';
 
 <BaseLayout {title}>
   <div class="text-center">
-    <p class="text-7xl xl:text-9xl">Сем<span class="text-index underline">ё</span>н</p>
+    <!-- prettier-ignore -->
+    <H1>Семён</H1>
     <p class="my-10">Backend-разработчик. Аспирант физического факультета МГУ.</p>
-    <button class="duration-400 rounded-full bg-index py-2 px-6 text-white shadow-xl transition hover:scale-110">
-      <!-- prettier-ignore -->
-      <a href={cv}>Резюме</a>
-    </button>
+    <!-- prettier-ignore -->
+    <Button href={cv} text="Резюме" />
   </div>
 </BaseLayout>
