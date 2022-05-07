@@ -1,0 +1,10 @@
+---
+const { href, text } = Astro.props;
+---
+
+<button
+  class="duration-400 rounded-full bg-yellow-300 py-2 px-6 font-semibold text-yellow-1000 shadow-xl transition hover:scale-110 dark:bg-yellow-200"
+>
+  <!-- prettier-ignore -->
+  <a href={href}>{text}</a>
+</button>
