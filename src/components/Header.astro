@@ -20,18 +20,18 @@ const items = [
         class={Astro.canonicalURL.pathname.slice(0, 2) === item.href.slice(0, 2) ? "active xl:block" : "xl:block"}
         x-bind:class="open ? 'open' : 'hidden'">
         <a
-          class="block p-4 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
+          class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
           href={item.href}
           >{item.text}</a
         >
       </li>
       )}
     </ul>
-    <button x-on:click="open = !open" class="absolute top-0 right-0 m-5 h-5 w-5 xl:hidden">
+    <button x-on:click="open = !open" class="absolute top-0 right-0 m-5 h-7 w-7 xl:hidden">
       <Icon name="mdi:menu" x-show="!open" />
       <Icon name="mdi:close" x-show="open" />
     </button>
-    <button x-on:click="darkMode = !darkMode" class="absolute top-0 left-0 m-5 h-5 w-5">
+    <button x-on:click="darkMode = !darkMode" class="absolute top-0 left-0 m-5 h-7 w-7">
       <Icon name="carbon:sun" x-show="!darkMode" />
       <Icon name="carbon:moon" x-show="darkMode" />
     </button>
