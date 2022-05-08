@@ -116,16 +116,16 @@ module.exports = {
         DEFAULT: {
           css: {
             '--tw-prose-body': theme('colors.gray.800'),
-            '--tw-prose-headings': theme('colors.yellow.300'),
-            '--tw-prose-code': theme('colors.blue.300'),
+            '--tw-prose-headings': theme('colors.gray.800'),
+            '--tw-prose-code': theme('colors.gray.800'),
             '--tw-prose-counters': theme('colors.gray.800'),
           },
         },
         dark: {
           css: {
             '--tw-prose-body': theme('colors.white'),
-            '--tw-prose-headings': theme('colors.yellow.200'),
-            '--tw-prose-code': theme('colors.blue.200'),
+            '--tw-prose-headings': theme('colors.white'),
+            '--tw-prose-code': theme('colors.white'),
             '--tw-prose-counters': theme('colors.white'),
           },
         },

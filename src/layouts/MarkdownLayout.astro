@@ -1,12 +1,12 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import Article from "../components/core/Article.astro";
 
 const { title } = Astro.props;
 ---
 
 <!-- TODO: пробросить название поста в заголовок -->
 <BaseLayout title="Блог | Семён Сыроватский">
-  <article class="prose max-w-none prose-headings:text-center dark:prose-dark">
-    <slot />
-  </article>
+  <!-- prettier-ignore -->
+  <Article><slot /></Article>
 </BaseLayout>

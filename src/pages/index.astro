@@ -1,19 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import H1 from "../components/core/H1.astro";
-import Button from "../components/core/Button.astro";
-
-import cv from "../assets/hh.pdf";
+import FAQ from "../components/index/FAQ.astro";
 
 const title = 'Семён Сыроватский';
 ---
 
 <BaseLayout {title}>
-  <div class="text-center">
-    <!-- prettier-ignore -->
-    <H1>Семён</H1>
-    <p class="my-10">Backend-разработчик. Аспирант физического факультета МГУ.</p>
-    <!-- prettier-ignore -->
-    <Button href={cv} text="Резюме" />
-  </div>
+  <FAQ />
 </BaseLayout>

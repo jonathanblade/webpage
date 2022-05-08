@@ -1,20 +1,25 @@
----
-import Link from "./core/Link.astro";
----
-
-<footer class="flex justify-center border-t border-stone-800/10 p-5 dark:border-stone-50/[0.06]">
-  <ul class="flex text-sm">
-    <li class="mx-4">
-      <!-- prettier-ignore -->
-      <Link href="https://github.com/jonathanblade" text="Github" />
+<footer class="flex items-center justify-center border-t border-gray-200 dark:border-gray-700">
+  <ul class="flex text-sm font-medium">
+    <li>
+      <a
+        class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
+        href="https://github.com/jonathanblade"
+        >Github</a
+      >
     </li>
-    <li class="mx-4">
-      <!-- prettier-ignore -->
-      <Link href="https://t.me/jonathanblade" text="Telegram" />
+    <li>
+      <a
+        class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
+        href="https://t.me/jonathanblade"
+        >Telegram</a
+      >
     </li>
-    <li class="mx-4">
-      <!-- prettier-ignore -->
-      <Link href="mailto:mail@syrovatskiy.tk" text="Email" />
+    <li>
+      <a
+        class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
+        href="mailto:mail@syrovatskiy.tk"
+        >Email</a
+      >
     </li>
   </ul>
 </footer>

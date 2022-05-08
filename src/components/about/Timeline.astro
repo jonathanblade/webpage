@@ -14,14 +14,14 @@ const QAPL = WORK.find((item) => item.id === 2);
 
 <div x-data="{data: 'All'}">
   <select
-    class="mt-10 cursor-pointer appearance-none rounded-full border bg-transparent py-2 px-3 text-center"
+    class="cursor-pointer appearance-none rounded-full border bg-transparent py-2 px-3 text-center"
     x-model="data"
   >
     <option>All</option>
     <option>Education</option>
     <option>Work</option>
   </select>
-  <ol class="relative border-l">
+  <ol class="relative border-l border-gray-200 dark:border-gray-700">
     <div x-show="data == 'All'">
       <TimelineItem>
         <time class="text-sm">14 сентября 1996</time>
