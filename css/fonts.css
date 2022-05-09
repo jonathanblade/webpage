@@ -1,0 +1,62 @@
+@import url('https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed');
+
+body {
+  font-family: 'Computer Modern Typewriter';
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .badge, .btn-font {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-title, .section-title {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+.swal2-popup {
+  font-size: 1em !important;
+}
+
+.popover, .tooltip {
+  font-family: 'Computer Modern Typewriter' !important;
+  font-size: 1em !important;
+  text-align: center !important;
+}
+
+@media screen and (max-height: 850px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  body {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  body {
+    font-size: 10px;
+  }
+}

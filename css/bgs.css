@@ -1,0 +1,44 @@
+.blurred-bg {
+  backdrop-filter: blur(10px);
+}
+
+.swal2-input, .swal2-textarea {
+  border: 2px solid #f0f0f0 !important;
+  background: white !important;
+}
+
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step,
+.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+  color: #333 !important;
+  background: #f0f0f0 !important;
+}
+
+.swal2-progress-steps .swal2-progress-step,
+.swal2-progress-steps .swal2-progress-step-line {
+  color: white !important;
+  background: #025ce2 !important;
+}
+
+.swal2-validation-message {
+  background: white !important;
+}
+
+.tooltip .arrow, 
+.popover .arrow {
+  display: none;
+}
+
+.tooltip.show {
+  opacity: 1 !important;
+}
+
+.tooltip-inner {
+  color: #333 !important;
+  background-color: white !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 0.3rem !important;
+}
+
+body, footer {
+  background: white;
+}

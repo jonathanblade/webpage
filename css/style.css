@@ -1,0 +1,62 @@
+body {
+  color: #333;
+  padding-right: 0 !important;
+}
+
+a, a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+b {
+  color: black;
+}
+
+.btn-right {
+  margin-left: auto !important;
+}
+
+.badge-dark, .badge-dark:hover {
+  background: #333 !important;
+}
+
+.fa-clock, .fa-external-link-alt {
+  padding-right: 0.4em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline:hover {
+  text-decoration: none;
+}
+
+.swal2-input:focus, .swal2-textarea:focus {
+  border: 2px solid #025ce2 !important;
+}
+
+.hvr-icon-float:focus .hvr-icon {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+.section-title {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 2px solid black; 
+  line-height: 0;
+} 
+
+.section-title span { 
+  background: white; 
+  padding: 0.5em; 
+}
+
+#section3 {
+  padding-bottom: 5em;
+}
