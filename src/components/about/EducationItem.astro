@@ -1,6 +1,5 @@
 ---
 import TimelineItem from './TimelineItem.astro';
-import Link from '../core/Link.astro';
 import TextMuted from '../core/TextMuted.astro';
 
 const { item } = Astro.props;
@@ -16,5 +15,9 @@ const { item } = Astro.props;
   <TextMuted>{item.program}</TextMuted>
   <p class="font-medium">Дипломная работа</p>
   <!-- prettier-ignore -->
-  <Link href={item.diploma.href} text={item.diploma.title} />
+  <a
+    class="text-gray-500 underline decoration-dotted underline-offset-4 hover:no-underline dark:text-gray-400"
+    href={item.diploma.href}
+    >{item.diploma.title}</a
+  >
 </TimelineItem>
