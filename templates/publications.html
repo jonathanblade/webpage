@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}Публикации | Семён Сыроватский{% endblock %}
+
+{% block content %}
+<div class='col-12 col-xl-3 col-md-5 mt-4'>{% include 'nav.html' %}</div>
+<div class='col-12 col-xl-4 col-md-6 mt-4'>
+	{% regroup publications by year as year_list %}
+	{% for year in year_list %}
+	<h3>{{ year.grouper }}</h3><hr>
+		{% for publ in year.list %}
+		<div class='mb-4'>
+			{{ publ.title }}<br>
+			<small>{{ publ.authors|safe }}</small><br>
+			<small class='text-muted'>{% if publ.url %}<a class='mr-2' href={{ publ.url }} target='_blank'><i class='fas fa-file-pdf'></i></a>{% endif %}{{ publ.journal }}, {% if publ.volume %}<strong>{{ publ.volume }}</strong>{% if publ.number %}({{ publ.number }}){% endif %}, {% endif %}{{ publ.year }}{% if publ.doi %}, doi: <a href={{ publ.get_doi_url }} target='_blank'>{{ publ.doi }}</a>{% endif %}</small>
+		</div>
+		{% endfor %}
+	{% endfor %}
+</div>
+{% endblock content %}
