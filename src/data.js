@@ -19,7 +19,7 @@ export const PROJECTS = [
     },
     repo: 'https://github.com/omronjs',
     href: 'https://github.com/jonathanblade/omronjs',
-    stack: ['Node.js', 'Typescript', 'Vue.js', 'FFI\u00A0N-API', 'GitHub\u00A0Actions'],
+    stack: ['Node.js', 'Typescript', 'FFI\u00A0N-API', 'GitHub\u00A0Actions'],
   },
 ];
 
