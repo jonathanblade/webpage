@@ -77,6 +77,12 @@ export const EDUCATION = [
   },
 ];
 
+export const CONTACTS = {
+  Github: 'https://github.com/jonathanblade',
+  Telegram: 'https://t.me/jonathanblade',
+  Email: 'mailto:mail@syrovatskiy.tk',
+};
+
 export const WORK = [
   {
     id: 1,
