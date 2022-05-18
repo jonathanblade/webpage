@@ -1,25 +1,16 @@
+---
+import ContactLink from "./ContactLink.astro";
+
+import { CONTACTS } from '../data.js';
+
+const contacts = Object.entries(CONTACTS);
+---
+
 <footer class="flex items-center justify-center border-t border-gray-200 dark:border-gray-700">
   <ul class="flex text-xs font-semibold">
-    <li>
-      <a
-        class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
-        href="https://github.com/jonathanblade"
-        >Github</a
-      >
-    </li>
-    <li>
-      <a
-        class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
-        href="https://t.me/jonathanblade"
-        >Telegram</a
-      >
-    </li>
-    <li>
-      <a
-        class="block p-5 uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
-        href="mailto:mail@syrovatskiy.tk"
-        >Email</a
-      >
-    </li>
+    {contacts.map(([text, href]) =>
+    <!-- prettier-ignore -->
+    <li><ContactLink href={href} text={text} /></li>
+    )}
   </ul>
 </footer>
