@@ -2,9 +2,6 @@
 const {href, text} = Astro.props;
 ---
 
-<!-- prettier-ignore -->
-<a
-  class="block p-5 uppercase xl:hover:bg-neutral xl:hover:text-white"
-  href={href}
-  >{text}</a
->
+<li>
+  <a class="block p-5 text-xs font-semibold uppercase md:hover:text-accent" href={href}>{text}</a>
+</li>

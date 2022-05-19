@@ -6,11 +6,11 @@ import { CONTACTS } from '../data.js';
 const contacts = Object.entries(CONTACTS);
 ---
 
-<footer class="flex items-center justify-center border-t">
-  <ul class="flex text-xs font-semibold">
+<footer class="flex items-center justify-center">
+  <ul class="flex">
     {contacts.map(([text, href]) =>
     <!-- prettier-ignore -->
-    <li><ContactLink href={href} text={text} /></li>
+    <ContactLink href={href} text={text} />
     )}
   </ul>
 </footer>

@@ -1,17 +1,11 @@
 ---
-import TextMuted from "../core/TextMuted.astro";
-
 const { item } = Astro.props;
 ---
 
 <li>
-  <!-- prettier-ignore -->
-  <a
-    class="md:duration-400 block rounded-xl border border-gray-200 p-5 dark:border-none dark:bg-gray-1000 md:transition md:hover:scale-105 md:hover:shadow-xl"
-    href={item.url}
-  >
+  <a class="block rounded-xl border border-neutral p-5 md:hover:bg-neutral md:hover:text-white" href={item.url}>
     <p class="text-sm">{item.frontmatter.date}</p>
-    <p class="text-lg font-medium text-gray-800 dark:text-white">{item.frontmatter.title}</p>
-    <TextMuted>{item.frontmatter.description}</TextMuted>
+    <p class="text-lg font-medium">{item.frontmatter.title}</p>
+    <p>{item.frontmatter.description}</p>
   </a>
 </li>
