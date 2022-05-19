@@ -6,15 +6,9 @@ import Footer from '../components/Footer.astro';
 const { title } = Astro.props;
 ---
 
-<html
-  x-data="{'darkMode': localStorage.getItem('darkMode') === 'true'}"
-  x-init="$watch('darkMode', value => localStorage.setItem('darkMode', value))"
-  x-bind:class="{'dark': darkMode}"
->
-  <head>
-    <BaseHead {title} />
-  </head>
-  <body class="flex min-h-screen flex-col bg-white text-gray-800 dark:bg-gray-800 dark:text-white">
+<html>
+  <BaseHead {title} />
+  <body class="flex min-h-screen flex-col">
     <!-- prettier-ignore -->
     <Header />
     <main class="mx-5 my-10 flex-grow">

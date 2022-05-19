@@ -1,6 +1,5 @@
 ---
 import TimelineItem from './TimelineItem.astro';
-import TextMuted from '../core/TextMuted.astro';
 
 const { item } = Astro.props;
 ---
@@ -8,7 +7,9 @@ const { item } = Astro.props;
 <TimelineItem>
   <time class="text-sm">{item.start}-{item.end ? item.end : "now"}</time>
   <p class="text-lg font-semibold">{item.company} ({item.city})</p>
-  <TextMuted>{item.position}</TextMuted>
+  <p>{item.position}</p>
   <p class="font-medium">Задачи</p>
-  {item.tasks.map(task => <TextMuted>{task}</TextMuted>)}
+  {item.tasks.map(task =>
+  <p>{task}</p>
+  )}
 </TimelineItem>

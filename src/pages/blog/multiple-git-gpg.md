@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkdownLayout.astro
+layout: ../../layouts/BlogPostLayout.astro
 title: Использование нескольких GPG-ключей в Git
 description: Небольшая инструкция для тех, кто хочет подписывать коммиты или теги разными GPG-ключами.
 date: 27 ноября 2021

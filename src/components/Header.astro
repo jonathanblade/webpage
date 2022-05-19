@@ -1,5 +1,8 @@
 ---
-import { Icon } from 'astro-icon';
+import Moon from "./icons/Moon.astro";
+import NavOpen from "./icons/NavOpen.astro";
+import NavClose from "./icons/NavClose.astro";
+import Sun from "./icons/Sun.astro";
 
 const items = [
   {'href': '/', 'text': 'Главная'},
@@ -11,29 +14,29 @@ const items = [
 
 <header class="sticky top-0 z-50">
   <nav
-    class="flex items-center justify-center bg-white/75 text-center shadow-xl backdrop-blur dark:bg-gray-800/75"
-    x-data="{open: false}"
+    class="flex items-center justify-center text-center bg-base-100 backdrop-blur bg-opacity-80 shadow-xl"
+    x-data="{navOpen: false}"
   >
-    <ul class="xl:flex">
+  <ul class="md:flex">
       {items.map(item =>
       <li
-        class={Astro.canonicalURL.pathname.slice(0, 2) === item.href.slice(0, 2) ? "active xl:block" : "xl:block"}
-        x-bind:class="open ? 'open' : 'hidden'">
+        class={Astro.canonicalURL.pathname.slice(0, 2) === item.href.slice(0, 2) ? "active md:block" : "md:block"}
+        x-bind:class="navOpen ? 'navOpen' : 'hidden'">
         <a
-          class="block p-5 font-medium uppercase xl:hover:bg-gray-800 xl:hover:text-white dark:xl:hover:bg-white dark:xl:hover:text-gray-800"
+          class="block p-5 font-medium uppercase md:hover:text-accent"
           href={item.href}
           >{item.text}</a
         >
       </li>
       )}
     </ul>
-    <button x-on:click="open = !open" class="absolute top-0 right-0 m-5 h-7 w-7 xl:hidden">
-      <Icon name="mdi:menu" x-show="!open" />
-      <Icon name="mdi:close" x-show="open" />
+    <button data-toggle-theme="night" data-act-class="swap-active" class="absolute top-0 left-0 p-5 swap swap-rotate md:hover:text-accent">
+      <Moon />
+      <Sun />
     </button>
-    <button x-on:click="darkMode = !darkMode" class="absolute top-0 left-0 m-5 h-7 w-7">
-      <Icon name="carbon:sun" x-show="!darkMode" />
-      <Icon name="carbon:moon" x-show="darkMode" />
+    <button x-on:click="navOpen = !navOpen" class="absolute top-0 right-0 p-5 md:hidden">
+      <NavOpen />
+      <NavClose />
     </button>
   </nav>
 </header>
