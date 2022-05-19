@@ -30,11 +30,11 @@ const items = [
       </li>
       )}
     </ul>
-    <button data-toggle-theme="night" data-act-class="swap-active" class="absolute top-0 left-0 p-5 swap swap-rotate md:hover:text-accent">
+    <button data-toggle-theme="night" data-act-class="swap-active" class="absolute top-0 left-0 p-5 swap swap-rotate md:hover:text-accent" aria-label="theme">
       <Moon />
       <Sun />
     </button>
-    <button x-on:click="navOpen = !navOpen" class="absolute top-0 right-0 p-5 md:hidden">
+    <button x-on:click="navOpen = !navOpen" class="absolute top-0 right-0 p-5 md:hidden" aria-label="nav">
       <NavOpen />
       <NavClose />
     </button>
