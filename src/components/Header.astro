@@ -10,6 +10,31 @@ const items = [
   {'href': '/blog/', 'text': 'Блог'},
   {'href': '/projects/', 'text': 'Проекты'},
 ];
+
+const setGiscusTheme = async () => {
+  await new Promise((resolve, reject) => setTimeout(resolve, 100));
+
+  const isDarkTheme = localStorage.getItem('theme') === 'night';
+  const dataTheme = isDarkTheme ? 'https://jonathanblade.github.io/giscus-dark.css' : 'https://jonathanblade.github.io/giscus.css';
+
+  const script = document.createElement('script');
+  script.src = 'https://giscus.app/client.js';
+  script.setAttribute('data-repo', 'jonathanblade/webpage');
+  script.setAttribute('data-repo-id', 'MDEwOlJlcG9zaXRvcnkzNTIxODY2Mjg=');
+  script.setAttribute('data-category', 'General');
+  script.setAttribute('data-category-id', 'DIC_kwDOFP3xBM4CPnto');
+  script.setAttribute('data-mapping', 'pathname');
+  script.setAttribute('data-reactions-enabled', '0');
+  script.setAttribute('data-emit-metadata', '0');
+  script.setAttribute('data-input-position', 'bottom');
+  script.setAttribute('data-theme', dataTheme);
+  script.setAttribute('data-lang', 'ru');
+  script.setAttribute('crossorigin', 'anonymous');
+  script.async = true;
+
+  const giscus = document.getElementById('giscus');
+  if (giscus) giscus.appendChild(script);
+};
 ---
 
 <header class="sticky top-0 z-50">
@@ -30,7 +55,7 @@ const items = [
       </li>
       )}
     </ul>
-    <button data-toggle-theme="night" data-act-class="swap-active" class="absolute top-0 left-0 p-5 swap swap-rotate md:hover:text-accent" aria-label="theme">
+    <button x-init={setGiscusTheme} x-on:click={setGiscusTheme} data-toggle-theme="night" data-act-class="swap-active" class="absolute top-0 left-0 p-5 swap swap-rotate md:hover:text-accent" aria-label="theme">
       <Moon />
       <Sun />
     </button>
