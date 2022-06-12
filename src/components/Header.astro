@@ -15,7 +15,7 @@ const setGiscusTheme = async () => {
   await new Promise((resolve, reject) => setTimeout(resolve, 100));
 
   const isDarkTheme = localStorage.getItem('theme') === 'night';
-  const dataTheme = isDarkTheme ? 'https://jonathanblade.github.io/giscus-dark.css' : 'https://jonathanblade.github.io/giscus.css';
+  const dataTheme = isDarkTheme ? 'https://syrovatskiy.tk/styles/giscus-dark.css' : 'https://syrovatskiy.tk/styles/giscus.css';
 
   const script = document.createElement('script');
   script.src = 'https://giscus.app/client.js';
