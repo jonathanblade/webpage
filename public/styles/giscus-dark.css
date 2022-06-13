@@ -6,7 +6,8 @@
 
 main {
   --accent: hsl(329 86% 70%);
-  --accent-disabled: hsl(329 86% 70% / 60%);
+  --accent-focus: hsl(329 86% 56%);
+  --accent-content: hsl(329 100% 14%);
   --base-content: hsl(222 66% 82%);
   --neutral: hsl(217 33% 17%);
 
@@ -45,7 +46,7 @@ main {
   --color-btn-border: transparent;
   --color-btn-shadow: 0 0 transparent;
   --color-btn-inset-shadow: 0 0 transparent;
-  --color-btn-hover-bg: var(--accent);
+  --color-btn-hover-bg: var(--accent-focus);
   --color-btn-hover-border: transparent;
   --color-btn-active-bg: var(--accent);
   --color-btn-active-border: transparent;
@@ -55,12 +56,12 @@ main {
   --color-btn-primary-border: transparent;
   --color-btn-primary-shadow: 0 0 transparent;
   --color-btn-primary-inset-shadow: 0 0 transparent;
-  --color-btn-primary-hover-bg: var(--accent);
+  --color-btn-primary-hover-bg: var(--accent-focus);
   --color-btn-primary-hover-border: transparent;
-  --color-btn-primary-selected-bg: var(--accent);
+  --color-btn-primary-selected-bg: var(--accent-focus);
   --color-btn-primary-selected-shadow: 0 0 transparent;
   --color-btn-primary-disabled-text: #fff;
-  --color-btn-primary-disabled-bg: var(--accent-disabled);
+  --color-btn-primary-disabled-bg: var(--accent-content);
   --color-btn-primary-disabled-border: transparent;
   --color-fg-default: var(--base-content);
   --color-fg-muted: var(--base-content);
