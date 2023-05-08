@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "clear": "rm -rf ./dist ./functions",
     "format": "prettier -w ./src"
   },
   "dependencies": {
