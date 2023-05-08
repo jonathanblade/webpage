@@ -1,0 +1,21 @@
+---
+import Layout from "@layouts/Base.astro";
+import ContactsSection from "@components/sections/ContactsSection.astro";
+import GreetingsSection from "@components/sections/GreetingsSection.astro";
+import HardSkillsSection from "@components/sections/HardSkillsSection.astro";
+import TimelineSection from "@components/sections/TimelineSection.astro";
+---
+
+<Layout>
+  <div class="flex items-center justify-center bg-black">
+    <video autoplay="" muted="" loop=""><source src="/hero.mov" type="video/mp4" /></video>
+  </div>
+  <div class="px-5 md:grid md:grid-cols-6 lg:grid-cols-5 xl:grid-cols-4">
+    <div class="col-start-2 md:col-end-6 lg:col-end-5 xl:col-end-4">
+      <GreetingsSection />
+      <TimelineSection />
+      <HardSkillsSection />
+      <ContactsSection />
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,27 @@
+---
+import { FaDocker, FaPython, FaRust, FaGit, FaLinux, FaNode } from "react-icons/fa";
+import { SiPostgresql, SiRedis, SiRabbitmq, SiTypescript } from "react-icons/si";
+
+import SectionHeader from "@components/SectionHeader";
+import HardSkillsCard from "@components/HardSkillsCard";
+import { getLangFromUrl, useTranslations } from "@i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section>
+  <SectionHeader text={t("section.skills.header")} />
+  <div class="grid grid-cols-3 gap-5 lg:grid-cols-5">
+    <HardSkillsCard title="Python"><FaPython /></HardSkillsCard>
+    <HardSkillsCard title="NodeJS"><FaNode /></HardSkillsCard>
+    <HardSkillsCard title="TypeScript"><SiTypescript /></HardSkillsCard>
+    <HardSkillsCard title="Rust"><FaRust /></HardSkillsCard>
+    <HardSkillsCard title="Docker"><FaDocker /></HardSkillsCard>
+    <HardSkillsCard title="Git"><FaGit /></HardSkillsCard>
+    <HardSkillsCard title="Linux"><FaLinux /></HardSkillsCard>
+    <HardSkillsCard title="PostgreSQL"><SiPostgresql /></HardSkillsCard>
+    <HardSkillsCard title="Redis"><SiRedis /></HardSkillsCard>
+    <HardSkillsCard title="RabbitMQ"><SiRabbitmq /></HardSkillsCard>
+  </div>
+</section>

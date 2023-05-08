@@ -1,0 +1,33 @@
+---
+import LanguagePicker from "@components/LanguagePicker.astro";
+import ThemeSwitcher from "@components/ThemeSwitcher";
+import { getLangFromUrl, useTranslations } from "@i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<html lang={lang}>
+  <head>
+    <title>{t("head.title")}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white text-black transition duration-300 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-50 backdrop-blur-md">
+      <ThemeSwitcher client:load />
+      <LanguagePicker />
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="flex justify-center">
+      <a
+        class="p-5 text-xs font-medium opacity-50 transition duration-300 hover:opacity-100"
+        href="https://astro.build"
+        target="_blank">{`${t("powered.by")} ${Astro.generator}`}</a
+      >
+    </footer>
+  </body>
+</html>

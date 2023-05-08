@@ -1,0 +1,28 @@
+---
+import { getLangFromUrl, languages } from "@i18n";
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<script>
+  function onChange(event: any) {
+    window.location.pathname = `/${event.currentTarget.value}`;
+  }
+  const langPicker = document.getElementById("lang-picker")!;
+  langPicker.addEventListener("change", onChange);
+</script>
+
+<select
+  class="cursor-pointer bg-transparent p-5 text-center text-xs font-semibold opacity-50 transition duration-300 hover:opacity-100"
+  id="lang-picker"
+>
+  {
+    Object.entries(languages).map(([key, value]) => {
+      return (
+        <option value={key} selected={key === lang}>
+          {value}
+        </option>
+      );
+    })
+  }
+</select>

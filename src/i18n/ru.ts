@@ -1,0 +1,36 @@
+export default {
+  "head.title": "Семён Сыроватский",
+  "section.greetings.header": "Привет, мир!",
+  "section.greetings.text":
+    "Добро пожаловать в мой персональный сетевой уголок. Меня зовут Сыроватский Семён. В настоящее время я занимаюсь аутсорсинговой работой на должности backend-разработчика в компании ООО «Платформа Качества».",
+  "section.timeline.header": "Таймлайн",
+  "section.skills.header": "Навыки",
+  "section.contacts.header": "Контакты",
+  "powered.by": "Сделано на",
+  "university.isu": "Иркутский государственный университет",
+  "university.msu": "Московский государственный университет имени М.В. Ломоносова",
+  "university.isu.bachelor.specialization":
+    "Телекоммуникационные системы и информационные технологии",
+  "university.msu.master.specialization":
+    "Физика атмосферы и околоземного космического пространства",
+  "university.msu.phd.specialization": "Физика атмосферы и гидросферы",
+  "university.department.physics": "Физический факультет",
+  "university.degree.bachelor": "Бакалавр",
+  "university.degree.master": "Магистр",
+  "university.degree.phd": "Аспирант",
+  "university.specialization": "Специализация",
+  "university.qualification": "Направление",
+  "university.qualification.physics": "Физика",
+  "university.qualification.radiophysics": "Радиофизика",
+  "university.qualification.earth": "Науки о Земле",
+  "university.diploma": "Дипломная работа",
+  "university.msu.master.diploma.title":
+    "Оценка точности позиционирования GPS при естественных и искусственных возмущениях ионосферы",
+  "university.istp": "ИСЗФ СО РАН",
+  "company.qapl": "ООО «Платформа Качества»",
+  "country.russia": "Россия",
+  "city.irkutsk": "Иркутск",
+  "city.moscow": "Москва",
+  "work.position.programmer.engineer": "Инженер-программист",
+  "work.position.developer": "Разработчик",
+};
