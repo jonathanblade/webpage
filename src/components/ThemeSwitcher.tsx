@@ -4,7 +4,7 @@ import SunIcon from "@components/icons/Sun";
 import MoonIcon from "@components/icons/Moon";
 
 const ThemeSwitcher: FC = () => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "dark");
+  const [theme, setTheme] = useState(typeof window !== "undefined" ? localStorage.theme : "dark");
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
