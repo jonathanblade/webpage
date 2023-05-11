@@ -1,21 +1,44 @@
 ---
 import Layout from "@layouts/Base.astro";
-import ContactsSection from "@components/sections/ContactsSection.astro";
-import GreetingsSection from "@components/sections/GreetingsSection.astro";
-import HardSkillsSection from "@components/sections/HardSkillsSection.astro";
-import TimelineSection from "@components/sections/TimelineSection.astro";
+import SectionHeader from "@components/SectionHeader";
+import ContactLink from "@components/ContactLink";
+import Timeline from "@components/Timeline.astro";
+import { getLangFromUrl, useTranslations } from "@i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout>
-  <div class="flex items-center justify-center bg-black">
+  <div class="flex justify-center bg-black">
     <video autoplay muted loop playsinline><source src="/hero.mov" type="video/mp4" /></video>
   </div>
-  <div class="px-5 md:grid md:grid-cols-6 lg:grid-cols-5 xl:grid-cols-4">
-    <div class="col-start-2 md:col-end-6 lg:col-end-5 xl:col-end-4">
-      <GreetingsSection />
-      <TimelineSection />
-      <HardSkillsSection />
-      <ContactsSection />
+  <div class="px-5 md:grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-3">
+    <div class="col-start-2 md:col-end-5 lg:col-end-4 xl:col-end-3">
+      <section>
+        <SectionHeader text={t("section.greetings.header")} />
+        <p class="text-justify">{t("section.greetings.text")}</p>
+      </section>
+      <section>
+        <SectionHeader text={t("section.timeline.header")} />
+        <Timeline />
+      </section>
+      <section>
+        <SectionHeader text={t("section.contacts.header")} />
+        <ul>
+          <ContactLink
+            header="Github"
+            href="https://github.com/jonathanblade"
+            text="https://github.com/jonathanblade"
+          />
+          <ContactLink header="Telegram" href="https://t.me/jonathanblade" text="@jonathanblade" />
+          <ContactLink
+            header="Email"
+            href="mailto:mail@syrovatskiy.tk"
+            text="mail@syrovatskiy.tk"
+          />
+        </ul>
+      </section>
     </div>
   </div>
 </Layout>

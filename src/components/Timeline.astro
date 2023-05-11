@@ -1,0 +1,86 @@
+---
+import Disclosure from "@components/Disclosure";
+import EducationItem from "@components/EducationItem";
+import { getLangFromUrl, useTranslations } from "@i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="grid gap-5">
+  <Disclosure
+    client:load
+    start={2021}
+    organization={t("company.qapl")}
+    position={t("work.position.developer")}
+  />
+  <Disclosure
+    client:load
+    start={2020}
+    end={2023}
+    organization={t("university.msu")}
+    position={t("university.degree.phd")}
+  >
+    <EducationItem
+      specialization={{
+        i18: t("university.specialization"),
+        name: t("university.msu.phd.specialization"),
+      }}
+      qualification={{
+        i18: t("university.qualification"),
+        code: "05.06.01",
+        name: t("university.qualification.earth"),
+      }}
+    />
+  </Disclosure>
+  <Disclosure
+    client:load
+    start={2018}
+    end={2020}
+    organization={t("university.msu")}
+    position={t("university.degree.master")}
+  >
+    <EducationItem
+      specialization={{
+        i18: t("university.specialization"),
+        name: t("university.msu.master.specialization"),
+      }}
+      qualification={{
+        i18: t("university.qualification"),
+        code: "03.04.02",
+        name: t("university.qualification.physics"),
+      }}
+      diploma={{
+        i18: t("university.diploma"),
+        title: t("university.msu.master.diploma.title"),
+        href: "https://github.com/jonathanblade/master-diploma",
+      }}
+    />
+  </Disclosure>
+  <Disclosure
+    client:load
+    start={2017}
+    end={2020}
+    organization={t("university.istp")}
+    position={t("work.position.programmer.engineer")}
+  />
+  <Disclosure
+    client:load
+    start={2014}
+    end={2018}
+    organization={t("university.isu")}
+    position={t("university.degree.bachelor")}
+  >
+    <EducationItem
+      specialization={{
+        i18: t("university.specialization"),
+        name: t("university.isu.bachelor.specialization"),
+      }}
+      qualification={{
+        i18: t("university.qualification"),
+        code: "03.03.03",
+        name: t("university.qualification.radiophysics"),
+      }}
+    />
+  </Disclosure>
+</div>

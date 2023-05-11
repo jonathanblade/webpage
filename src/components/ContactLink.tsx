@@ -8,10 +8,10 @@ interface ContactLinkProps {
 
 const ContactLink: FC<ContactLinkProps> = (props) => {
   return (
-    <li className="mb-3 text-xs font-medium">
-      <span className="uppercase">{props.header}</span>
+    <li className="py-2 text-sm">
+      <span className="font-medium uppercase">{props.header}</span>
       <a
-        className="block opacity-50 transition duration-300 hover:opacity-100"
+        className="block opacity-50 transition duration-500 hover:opacity-100"
         href={props.href}
         target="_blank"
       >

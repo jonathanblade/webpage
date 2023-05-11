@@ -11,13 +11,13 @@ interface WorkItemProps {
 
 const WorkItem: FC<WorkItemProps> = (props) => {
   return (
-    <li className="py-2">
-      <time className="text-xs opacity-50">{`${props.start}-${props.end}`}</time>
+    <div className="cursor-pointer rounded-xl border p-5">
+      <time className="text-xs">{`${props.start}-${props.end}`}</time>
       <p className="text-lg font-medium">
         {props.company} ({props.country}, {props.city})
       </p>
       <p className="text-sm">{props.position}</p>
-    </li>
+    </div>
   );
 };
 

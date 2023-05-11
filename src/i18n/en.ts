@@ -4,7 +4,6 @@ export default {
   "section.greetings.text":
     "Welcome to my personal web corner. My name is Semen Syrovatskiy. At the present time I'm working as a backend developer at the QA Platform Ltd.",
   "section.timeline.header": "Timeline",
-  "section.skills.header": "Hard Skills",
   "section.contacts.header": "Contacts",
   "powered.by": "Powered by",
   "university.isu": "Irkutsk State University",
