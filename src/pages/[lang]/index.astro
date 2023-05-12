@@ -16,15 +16,15 @@ const t = useTranslations(lang);
   <div class="px-5 md:grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-3">
     <div class="col-start-2 md:col-end-5 lg:col-end-4 xl:col-end-3">
       <section>
-        <SectionHeader text={t("section.greetings.header")} />
-        <p class="text-justify">{t("section.greetings.text")}</p>
+        <SectionHeader text={t("hello.world")} />
+        <p class="text-justify">{t("greetings")}</p>
       </section>
       <section>
-        <SectionHeader text={t("section.timeline.header")} />
+        <SectionHeader text={t("timeline")} />
         <Timeline />
       </section>
       <section>
-        <SectionHeader text={t("section.contacts.header")} />
+        <SectionHeader text={t("contacts")} />
         <ul>
           <ContactLink
             header="Github"
