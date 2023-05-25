@@ -1,23 +1,40 @@
 import type { FC } from "react";
 
+interface IArea {
+  i18n: string;
+  values: string[];
+}
+
+interface IStack {
+  i18n: string;
+  values: string[];
+}
+
 interface WorkItemProps {
-  start: number;
-  end?: number;
-  company: string;
-  country: string;
-  city: string;
-  position: string;
+  area: IArea;
+  stack: IStack;
 }
 
 const WorkItem: FC<WorkItemProps> = (props) => {
   return (
-    <li className="py-2">
-      <time className="text-xs opacity-50">{`${props.start}-${props.end}`}</time>
-      <p className="text-lg font-medium">
-        {props.company} ({props.country}, {props.city})
+    <div>
+      <p className="font-medium">{props.area.i18n}</p>
+      <p className="text-sm">
+        {props.area.values.map((value, index) => (
+          <span key={index} className="pr-2">
+            {value}
+          </span>
+        ))}
       </p>
-      <p className="text-sm">{props.position}</p>
-    </li>
+      <p className="pt-2 font-medium">{props.stack.i18n}</p>
+      <p className="text-sm">
+        {props.stack.values.map((value, index) => (
+          <span key={index} className="inline-block pr-2">
+            {value}
+          </span>
+        ))}
+      </p>
+    </div>
   );
 };
 

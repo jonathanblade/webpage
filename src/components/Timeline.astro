@@ -1,0 +1,102 @@
+---
+import Disclosure from "@components/Disclosure";
+import EducationItem from "@components/EducationItem";
+import WorkItem from "@components/WorkItem";
+import { getLangFromUrl, useTranslations } from "@i18n";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div class="grid gap-5">
+  <Disclosure client:load start={2021} organization={t("qapl")} position={t("developer")}>
+    <WorkItem
+      area={{
+        i18n: t("area"),
+        values: ["IoT", "ML", "Web"],
+      }}
+      stack={{
+        i18n: t("stack"),
+        values: [
+          "Python",
+          "Rust",
+          "NodeJS",
+          "TypeScript",
+          "PostgreSQL",
+          "Docker",
+          "Redis",
+          "RabbitMQ",
+        ],
+      }}
+    />
+  </Disclosure>
+  <Disclosure client:load start={2020} end={2023} organization={t("msu")} position={t("phd")}>
+    <EducationItem
+      specialization={{
+        i18n: t("specialization"),
+        name: t("phd.specialization"),
+      }}
+      qualification={{
+        i18n: t("qualification"),
+        code: "05.06.01",
+        name: t("earth.sciences"),
+      }}
+      diploma={{
+        i18n: t("diploma"),
+        title: t("phd.diploma.title"),
+      }}
+    />
+  </Disclosure>
+  <Disclosure client:load start={2018} end={2020} organization={t("msu")} position={t("master")}>
+    <EducationItem
+      specialization={{
+        i18n: t("specialization"),
+        name: t("master.specialization"),
+      }}
+      qualification={{
+        i18n: t("qualification"),
+        code: "03.04.02",
+        name: t("physics"),
+      }}
+      diploma={{
+        i18n: t("diploma"),
+        title: t("master.diploma.title"),
+      }}
+    />
+  </Disclosure>
+  <Disclosure
+    client:load
+    start={2017}
+    end={2020}
+    organization={t("istp")}
+    position={t("programmer.engineer")}
+  >
+    <WorkItem
+      area={{
+        i18n: t("area"),
+        values: ["Web", "Data Processing"],
+      }}
+      stack={{
+        i18n: t("stack"),
+        values: ["Python", "MongoDB"],
+      }}
+    />
+  </Disclosure>
+  <Disclosure client:load start={2014} end={2018} organization={t("isu")} position={t("bachelor")}>
+    <EducationItem
+      specialization={{
+        i18n: t("specialization"),
+        name: t("bachelor.specialization"),
+      }}
+      qualification={{
+        i18n: t("qualification"),
+        code: "03.03.03",
+        name: t("radiophysics"),
+      }}
+      diploma={{
+        i18n: t("diploma"),
+        title: t("bachelor.diploma.title"),
+      }}
+    />
+  </Disclosure>
+</div>

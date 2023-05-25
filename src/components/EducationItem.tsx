@@ -1,52 +1,37 @@
 import type { FC } from "react";
 
 interface ISpecialization {
-  i18: string;
+  i18n: string;
   name: string;
 }
 
 interface IQualification {
-  i18: string;
+  i18n: string;
   code: string;
   name: string;
 }
 
 interface IDiploma {
-  i18: string;
-  title?: string;
-  href?: string;
+  i18n: string;
+  title: string;
 }
 
 interface EducationItemProps {
-  start: number;
-  end: number;
-  university: string;
-  department: string;
-  degree: string;
   specialization: ISpecialization;
   qualification: IQualification;
-  diploma?: IDiploma;
+  diploma: IDiploma;
 }
 
 const EducationItem: FC<EducationItemProps> = (props) => {
   return (
-    <li className="py-2">
-      <time className="text-xs opacity-50">{`${props.start}-${props.end}`}</time>
-      <p className="text-lg font-medium">{`${props.university}, ${props.department}`}</p>
-      <p className="text-sm">{props.degree}</p>
-      <p className="font-medium">{props.qualification.i18}</p>
+    <div>
+      <p className="font-medium">{props.qualification.i18n}</p>
       <p className="text-sm">{`${props.qualification.code} ${props.qualification.name}`}</p>
-      <p className="font-medium">{props.specialization.i18}</p>
+      <p className="pt-2 font-medium">{props.specialization.i18n}</p>
       <p className="text-sm">{props.specialization.name}</p>
-      <p className="font-medium">{props.diploma?.i18}</p>
-      <a
-        className="text-sm opacity-50 transition duration-300 hover:opacity-100"
-        href={props.diploma?.href}
-        target="_blank"
-      >
-        {props.diploma?.title ? `# ${props.diploma.title}` : ""}
-      </a>
-    </li>
+      <p className="pt-2 font-medium">{props.diploma.i18n}</p>
+      <p className="text-sm">{props.diploma.title}</p>
+    </div>
   );
 };
 
