@@ -7,7 +7,7 @@ interface DisclosureProps {
   end?: number;
   organization: string;
   position: string;
-  children?: ReactElement;
+  children: ReactElement;
 }
 
 const Disclosure: FC<DisclosureProps> = (props) => {
