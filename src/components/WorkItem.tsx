@@ -29,7 +29,7 @@ const WorkItem: FC<WorkItemProps> = (props) => {
       <p className="pt-2 font-medium">{props.stack.i18n}</p>
       <p className="text-sm">
         {props.stack.values.map((value, index) => (
-          <span key={index} className="pr-2">
+          <span key={index} className="inline-block pr-2">
             {value}
           </span>
         ))}
