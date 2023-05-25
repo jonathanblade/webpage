@@ -5,9 +5,9 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<footer>
+<footer class="flex justify-center p-5">
   <a
-    class="flex justify-center p-5 text-xs font-medium opacity-50 transition duration-500 hover:opacity-100"
+    class="text-xs font-medium opacity-50 transition duration-500 hover:opacity-100"
     href="https://astro.build"
     target="_blank">{`${t("powered.by")} ${Astro.generator}`}</a
   >
