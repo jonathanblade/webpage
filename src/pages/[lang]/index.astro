@@ -2,6 +2,7 @@
 import Layout from "@layouts/Base.astro";
 import SectionHeader from "@components/SectionHeader";
 import ContactLink from "@components/ContactLink";
+import HeroVideo from "@components/HeroVideo.astro";
 import Timeline from "@components/Timeline.astro";
 import { getLangFromUrl, useTranslations } from "@i18n";
 
@@ -10,9 +11,7 @@ const t = useTranslations(lang);
 ---
 
 <Layout>
-  <div class="flex justify-center bg-black">
-    <video autoplay muted loop playsinline><source src="/hero.mov" type="video/mp4" /></video>
-  </div>
+  <HeroVideo />
   <div class="px-5 md:grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-3">
     <div class="col-start-2 md:col-end-5 lg:col-end-4 xl:col-end-3">
       <section>
