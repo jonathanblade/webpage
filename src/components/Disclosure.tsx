@@ -22,7 +22,9 @@ const Disclosure: FC<DisclosureProps> = (props) => {
                 <p className="text-lg font-medium">{props.organization}</p>
                 <p className="text-sm">{props.position}</p>
               </div>
-              <ChevronUpIcon className={`${open ? "rotate-180 transform" : ""} h-6 w-6`} />
+              <ChevronUpIcon
+                className={`${open ? "rotate-180 transform" : ""} h-6 w-6 transition duration-500`}
+              />
             </HeadlessDisclosure.Button>
             <HeadlessDisclosure.Panel className="px-4 pt-2">
               {props.children}
