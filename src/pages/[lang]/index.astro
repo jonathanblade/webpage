@@ -10,24 +10,35 @@ const t = useTranslations(lang);
 ---
 
 <Layout>
-  <section>
-    <SectionHeader text={t("hello.world")} />
-    <p class="text-justify">{t("greetings")}</p>
-  </section>
-  <section>
-    <SectionHeader text={t("timeline")} />
-    <Timeline />
-  </section>
-  <section>
-    <SectionHeader text={t("contacts")} />
-    <ul>
-      <ContactLink
-        header="Github"
-        href="https://github.com/jonathanblade"
-        text="https://github.com/jonathanblade"
-      />
-      <ContactLink header="Telegram" href="https://t.me/jonathanblade" text="@jonathanblade" />
-      <ContactLink header="Email" href="mailto:mail@syrovatskiy.tk" text="mail@syrovatskiy.tk" />
-    </ul>
-  </section>
+  <div class="flex justify-center bg-black">
+    <video autoplay muted loop playsinline><source src="/hero.mov" type="video/mp4" /></video>
+  </div>
+  <div class="px-5 md:grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-3">
+    <div class="col-start-2 md:col-end-5 lg:col-end-4 xl:col-end-3">
+      <section>
+        <SectionHeader text={t("hello.world")} />
+        <p class="text-justify">{t("greetings")}</p>
+      </section>
+      <section>
+        <SectionHeader text={t("timeline")} />
+        <Timeline />
+      </section>
+      <section>
+        <SectionHeader text={t("contacts")} />
+        <ul>
+          <ContactLink
+            header="Github"
+            href="https://github.com/jonathanblade"
+            text="https://github.com/jonathanblade"
+          />
+          <ContactLink header="Telegram" href="https://t.me/jonathanblade" text="@jonathanblade" />
+          <ContactLink
+            header="Email"
+            href="mailto:mail@syrovatskiy.tk"
+            text="mail@syrovatskiy.tk"
+          />
+        </ul>
+      </section>
+    </div>
+  </div>
 </Layout>
