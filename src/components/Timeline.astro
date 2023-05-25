@@ -41,6 +41,10 @@ const t = useTranslations(lang);
         code: "05.06.01",
         name: t("earth.sciences"),
       }}
+      diploma={{
+        i18n: t("diploma"),
+        title: t("phd.diploma.title"),
+      }}
     />
   </Disclosure>
   <Disclosure client:load start={2018} end={2020} organization={t("msu")} position={t("master")}>
@@ -57,7 +61,6 @@ const t = useTranslations(lang);
       diploma={{
         i18n: t("diploma"),
         title: t("master.diploma.title"),
-        href: "https://github.com/jonathanblade/master-diploma",
       }}
     />
   </Disclosure>
@@ -89,6 +92,10 @@ const t = useTranslations(lang);
         i18n: t("qualification"),
         code: "03.03.03",
         name: t("radiophysics"),
+      }}
+      diploma={{
+        i18n: t("diploma"),
+        title: t("bachelor.diploma.title"),
       }}
     />
   </Disclosure>

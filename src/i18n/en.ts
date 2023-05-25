@@ -21,8 +21,12 @@ export default {
   "radiophysics": "Radiophysics",
   "earth.sciences": "Earth Sciences",
   "diploma": "Diploma",
+  "bachelor.diploma.title":
+    "The effect of solar flares on the ionosphere of the Earth during 24th cycle of solar activity",
   "master.diploma.title":
     "Estimation of GPS positioning precision in naturally and artificially disturbed ionosphere",
+  "phd.diploma.title":
+    "Impact of natural and anthropogenic ionospheric perturbation on the accuracy of precise GNSS positioning",
   "istp": "ISTP SB RAS",
   "qapl": "QA Platform Ltd",
   "russia": "Russia",
