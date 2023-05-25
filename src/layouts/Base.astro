@@ -12,7 +12,11 @@ const lang = getLangFromUrl(Astro.url);
   <body class="flex h-screen flex-col bg-white text-black dark:bg-black dark:text-white">
     <Header />
     <main class="flex-grow">
-      <slot />
+      <div class="px-5 md:grid md:grid-cols-5 lg:grid-cols-4 xl:grid-cols-3">
+        <div class="col-start-2 md:col-end-5 lg:col-end-4 xl:col-end-3">
+          <slot />
+        </div>
+      </div>
     </main>
     <Footer />
   </body>
